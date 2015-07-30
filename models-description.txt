@@ -1,0 +1,9 @@
+model user name:string surname:string email:string password:string
+
+has_one :first_course_dish
+has_one :second_course_dish
+has_one :drink
+has_many :orders
+
+
+model order
