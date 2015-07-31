@@ -1,0 +1,28 @@
+= form_for @order do |f|
+  - if @order.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@order.errors.count, "error")} prohibited this order from being saved:"
+      %ul
+        - @order.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :date
+    = f.date_select :date
+  .field
+    = f.label :first_course_dish_id
+    = f.number_field :first_course_dish_id
+  .field
+    = f.label :second_course_dish_id
+    = f.number_field :second_course_dish_id
+  .field
+    = f.label :drink_id
+    = f.number_field :drink_id
+  .field
+    = f.label :user_id
+    = f.number_field :user_id
+  .field
+    = f.label :menu_id
+    = f.number_field :menu_id
+  .actions
+    = f.submit 'Save'
