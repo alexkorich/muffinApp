@@ -3,11 +3,9 @@ require 'rails_helper'
 RSpec.describe "orders/show", type: :view do
   before(:each) do
     @order = assign(:order, Order.create!(
-      :first_course_dish_id => 1,
-      :second_course_dish_id => 2,
-      :drink_id => 3,
-      :user_id => 4,
-      :menu_id => 5
+      :dish_id => 1,
+      :user_id => 2,
+      :menu_id => 3
     ))
   end
 
@@ -16,7 +14,5 @@ RSpec.describe "orders/show", type: :view do
     expect(rendered).to match(/1/)
     expect(rendered).to match(/2/)
     expect(rendered).to match(/3/)
-    expect(rendered).to match(/4/)
-    expect(rendered).to match(/5/)
   end
 end

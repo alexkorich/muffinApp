@@ -4,9 +4,7 @@
   %thead
     %tr
       %th Date
-      %th First course dish
-      %th Second course dish
-      %th Drink
+      %th Dish
       %th User
       %th Menu
       %th
@@ -17,9 +15,7 @@
     - @orders.each do |order|
       %tr
         %td= order.date
-        %td= order.first_course_dish_id
-        %td= order.second_course_dish_id
-        %td= order.drink_id
+        %td= order.dish_id
         %td= order.user_id
         %td= order.menu_id
         %td= link_to 'Show', order

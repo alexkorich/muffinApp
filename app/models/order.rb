@@ -1,7 +1,8 @@
 class Order < ActiveRecord::Base
-	 has_one :dish, :as => :first_course_dish
-	 has_one :dish, :as => :second_course_dish
-	 has_one :dish, :as => :drink
-	 belongs_to :user
+  belongs_to :user
+  # has_one :dish, class_name: "Drink"
+  has_many :dishes
+  # has_one :dish, class_name: "SecondCourseDish"
+
 
 end
