@@ -1,4 +1,4 @@
-class RemoveFirstCourseIsdFromMenu < ActiveRecord::Migration
+class RemoveFirstCourseDishIdFromMenu < ActiveRecord::Migration
   def change
     remove_column :menus, :first_course_dish_id, :integer
   end
