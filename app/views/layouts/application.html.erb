@@ -17,7 +17,7 @@
       <%= link_to "Login", new_user_session_path %>
     <% end %>
   </div>
- 
+ menu for today:<%= @menu[0].drinks %>
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, id: "flash-#{name}" %>
   <% end %>

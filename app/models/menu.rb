@@ -5,5 +5,6 @@ class Menu < ActiveRecord::Base
   has_many :first_course_dishes
   has_many :second_course_dishes
 
-  validates :drinks, :first_course_dishes, :second_course_dishes, presence: true
+  validates :drinks, :first_course_dishes, :second_course_dishes, :date, presence: true
+  validates :date, uniqueness:true
 end
