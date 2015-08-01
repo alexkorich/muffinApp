@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby "2.2.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 
@@ -31,7 +31,6 @@ gem "haml-rails", "~> 0.9"
 gem 'carrierwave'
 gem "rails_admin"
 gem 'simple_form'
-gem "haml-rails", "~> 0.9"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
