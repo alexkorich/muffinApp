@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'dishes_controller/index'
+
+  get 'dishes_controller/show'
+
+  get 'dishes_controller/new'
+
+  get 'dishes_controller/edit'
+
+  get 'dishes_controller/create'
+
+  get 'dishes_controller/update'
+
+  get 'dishes_controller/destroy'
+
   resources :orders
   resources :orders
   resources :menus

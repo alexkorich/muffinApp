@@ -1,0 +1,10 @@
+= form_for @first_course_dish do |f|
+  - if @first_course_dish.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@first_course_dish.errors.count, "error")} prohibited this first_course_dish from being saved:"
+      %ul
+        - @first_course_dish.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

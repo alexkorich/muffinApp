@@ -1,0 +1,19 @@
+%h1 Listing second_course_dishes
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @second_course_dishes.each do |second_course_dish|
+      %tr
+        %td= link_to 'Show', second_course_dish
+        %td= link_to 'Edit', edit_second_course_dish_path(second_course_dish)
+        %td= link_to 'Destroy', second_course_dish, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Second course dish', new_second_course_dish_path
