@@ -10,7 +10,10 @@ class Ability
     #   else
     #     can :read, :all
     #   end
-    #
+    
+can :access, :rails_admin   # grant access to rails_admin
+can :dashboard              # grant access to the dashboard
+    
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions
