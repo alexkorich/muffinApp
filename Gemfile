@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 # postgresql
 gem 'pg'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'cancancan', '~> 1.10'
 gem "haml-rails", "~> 0.9"
 gem 'carrierwave'
