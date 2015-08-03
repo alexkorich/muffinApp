@@ -10,7 +10,7 @@ class Ability
         can :dashboard 
         can :manage, :all
       else
-        can :read, :all
+        can :read, :menus
       end
     
              # grant access to the dashboard
