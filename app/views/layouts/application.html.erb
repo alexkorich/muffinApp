@@ -10,7 +10,7 @@
   <div id="user-nav">
   <%= link_to "Home", root_path%>
     <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.name?%></strong><strong><%=current_user.email %></strong>.
+      Logged in as <strong><%= current_user.role%></strong><strong><%=current_user.email %></strong>.
       <% if current_user.role==="admin" %>
       <%=current_user.role %>
       <%= link_to("Admin page", rails_admin.dashboard_path) %>
