@@ -6,11 +6,15 @@ class Ability
     #
       user ||= User.new # guest user (not logged in)
       if user.role==="admin"
-        can  :access, :rails_admin   # grant access to rails_admin
+        can :access, :rails_admin   # grant access to rails_admin
         can :dashboard 
         can :manage, :all
+      elsif user.role==="customer"
+
+        can :read, :all
+        can :create, :orders
       else
-        can :read, :menus
+        can :read, Menu, :date => Date.today
       end
     
              # grant access to the dashboard
