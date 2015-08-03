@@ -1,0 +1,50 @@
+<p id="notice">
+  <%= notice %>
+</p>
+<p>
+  <b>Today is</b>
+  <%= @menu.date %>
+</p>
+Menu for today:
+<p>
+  <b>First course dishes:</b>
+  <% @menu.first_course_dishes.each do |f| %>
+  <table>
+    <th>Name</th> <th>Price</th>
+    <tbody>
+
+      <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
+    </tbody>
+  </table>
+  
+
+  <% end %>
+</p>
+<p>
+  <b>Second course dishes:</b>
+  <% @menu.second_course_dishes.each do |f| %>
+  <table>
+    <th>Name</th> <th>Price</th>
+    <tbody>
+
+      <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
+    </tbody>
+  </table>
+  <% end %>
+</p>
+<p>
+<b>Drinks:</b>
+  <% @menu.drinks.each do |f| %>
+  <table>
+    <th>Name</th> <th>Price</th>
+    <tbody>
+      
+      <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
+    </tbody>
+  </table>
+  <% end %>
+</p>
+<p></p>
+<%= link_to 'Edit', edit_menu_path(@menu) %>
+|
+<%= link_to 'Back', menus_path %>

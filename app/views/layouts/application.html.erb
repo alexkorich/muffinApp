@@ -8,8 +8,13 @@
 </head>
 <body>
   <div id="user-nav">
+  <%= link_to "Home", root_path%>
     <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
+      Logged in as <strong><%= current_user.name?%></strong><strong><%=current_user.email %></strong>.
+      <% if current_user.role==="admin" %>
+      <%=current_user.role %>
+      <%= link_to("Admin page", rails_admin.dashboard_path) %>
+      <% end %>
       <%= link_to 'Edit profile', edit_user_registration_path %> |
       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
     <% else %>
@@ -17,7 +22,11 @@
       <%= link_to "Login", new_user_session_path %>
     <% end %>
   </div>
- menu for today:<%= if (@menu) then @menu[0].drinks  end%>
+
+
+
+
+
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, id: "flash-#{name}" %>
   <% end %>

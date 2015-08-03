@@ -16,10 +16,6 @@
     - @menus.each do |menu|
       %tr
         %td= menu.date
-        %td= menu.first_course_dish_id
-        %td= menu.second_course_id
-        %td= menu.drink_id
-        %td= menu.order_id
         %td= link_to 'Show', menu
         %td= link_to 'Edit', edit_menu_path(menu)
         %td= link_to 'Destroy', menu, :method => :delete, :data => { :confirm => 'Are you sure?' }

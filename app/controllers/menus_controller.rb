@@ -4,7 +4,7 @@ class MenusController < ApplicationController
   # GET /menus
   # GET /menus.json
   def index
-    @menus = Menu.all
+    @menu = Menu.find_by(date:Date.today)
   end
 
   # GET /menus/1
