@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
- 
+
+
+  get 'menus/find_by_date' => 'menus#find_by_date'
   resources :orders
   resources :menus
   resources :users

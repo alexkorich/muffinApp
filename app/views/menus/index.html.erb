@@ -3,6 +3,10 @@
 <p id="notice">
   <%= notice %>
 </p>
+<%= week_calendar start_date:2.weeks.ago, number_of_weeks: 2 do |date| %>
+  <%= date %>
+  <%= link_to "menu",  controller: "menus", action: "find_by_date",  :date => date %>
+<% end %>
 <p>
   <b>Today is</b>
   <%= @menu.date %>
@@ -10,11 +14,12 @@
 Menu for today:
 <p>
   <b>First course dishes:</b>
-  <% @menu.first_course_dishes.each do |f| %>
+  
   <table>
     <th>Name</th> <th>Price</th>
+    
     <tbody>
-
+<% @menu.first_course_dishes.each do |f| %>
       <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
     </tbody>
   </table>
@@ -24,11 +29,11 @@ Menu for today:
 </p>
 <p>
   <b>Second course dishes:</b>
-  <% @menu.second_course_dishes.each do |f| %>
+ 
   <table>
     <th>Name</th> <th>Price</th>
     <tbody>
-
+ <% @menu.second_course_dishes.each do |f| %>
       <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
     </tbody>
   </table>
@@ -36,11 +41,11 @@ Menu for today:
 </p>
 <p>
 <b>Drinks:</b>
-  <% @menu.drinks.each do |f| %>
+ 
   <table>
     <th>Name</th> <th>Price</th>
     <tbody>
-      
+       <% @menu.drinks.each do |f| %>
       <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
     </tbody>
   </table>

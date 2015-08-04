@@ -20,7 +20,14 @@ class MenusController < ApplicationController
   # GET /menus/1/edit
   def edit
   end
-
+  def find_by_date
+    @menu1=Menu.find_by(date:params[:date])
+    if @menu1
+      redirect_to  :action => 'show', :id => @menu1.id
+    else
+      redirect_to :back, flash: {error: "Oops, there is no menu for that day!"}
+    end
+  end
   # POST /menus
   # POST /menus.json
   def create

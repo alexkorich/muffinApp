@@ -31,6 +31,7 @@ gem "haml-rails", "~> 0.9"
 gem 'carrierwave'
 gem "rails_admin"
 gem 'simple_form'
+gem "simple_calendar", "~> 1.1.0"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

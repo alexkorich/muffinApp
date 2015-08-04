@@ -1,0 +1,26 @@
+%h1
+  this is menu for 
+  =@menu.date
+%table
+  %thead
+    %tr
+      
+      %th First course dishes
+      %th Second course dishes
+      %th Drinks
+     
+
+  %tbody
+    %tr
+      %td 
+        -@menu.first_course_dishes.each do |d|
+          =d.name
+          =d.price
+      %td 
+        -@menu.second_course_dishes.each do |d|
+          =d.name
+          =d.price
+      %td 
+        -@menu.drinks.each do |d|
+          =d.name
+          =d.price
