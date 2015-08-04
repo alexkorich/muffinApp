@@ -12,6 +12,7 @@ class Ability
       elsif user.role==="customer"
 
         can :read, :all
+        can :read, Menu
         can :create, :orders
       else
         can :read, Menu, :date => Date.today

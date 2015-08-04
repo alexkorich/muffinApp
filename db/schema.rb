@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150801192546) do
+ActiveRecord::Schema.define(version: 20150804190745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,12 +22,24 @@ ActiveRecord::Schema.define(version: 20150801192546) do
     t.string   "quantity_description"
     t.integer  "quantity"
     t.float    "price"
-    t.integer  "menu_id"
-    t.integer  "order_id"
     t.string   "type"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
+
+  create_table "dishes_menus", id: false, force: :cascade do |t|
+    t.integer "dish_id"
+    t.integer "menu_id"
+  end
+
+  add_index "dishes_menus", ["dish_id", "menu_id"], name: "dishes_menus_index", unique: true, using: :btree
+
+  create_table "dishes_orders", id: false, force: :cascade do |t|
+    t.integer "dish_id"
+    t.integer "order_id"
+  end
+
+  add_index "dishes_orders", ["dish_id", "order_id"], name: "dishes_orders_index", unique: true, using: :btree
 
   create_table "menus", force: :cascade do |t|
     t.date     "date"
