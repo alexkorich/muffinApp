@@ -11,10 +11,10 @@
     <%= @menu.date %>
   </p>
   Menu for today: 
-  <%= simple_form_for @menu, :url => url_for(:action => 'create_from_menu', :controller => 'orders'), :method => 'post' do |f| %>
-    <%= f.association :first_course_dishes, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
+  <%= simple_form_for @menu, name:"order",  :url => url_for(:action => 'create', :controller => 'orders'), :method => 'post' do |f| %>
+    <%= f.association :first_course_dishes, as: "first_course_dish", :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
     <%= f.association :second_course_dishes, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
-    <%= f.association :drinks, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
+    <%= f.association :drinks, label_method: lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
     <%= f.submit "Process order" %>
   <% end %> 
 

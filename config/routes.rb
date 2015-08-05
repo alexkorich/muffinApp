@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
   devise_for :users
-  post 'orders/create_from_menu' => 'orders#create_from_menu'
   get 'menus/find_by_date' => 'menus#find_by_date'
   resources :orders
   resources :menus

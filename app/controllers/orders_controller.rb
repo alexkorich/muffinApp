@@ -20,17 +20,17 @@ class OrdersController < ApplicationController
   # GET /orders/1/edit
   def edit
   end
-  def create_from_menu
-    puts "TTTTTTTTTTTTTTTT"
-    m=params["menu"]
-    redirect_to :action => 'create', first_course_dish_id: m[:first_course_dish_id], second_course_dish_id: m[:second_course_dish_id], drink_id:m[:drink_id]
-  end
-  # POST /orders
-  # POST /orders.json
+ 
   def create
+    params[:order]=params["menu"]
+    
     @order = Order.new(order_params)
     @order.date=Date.today
     @order.user_id=current_user.id
+    @order.first_course_dish=FirstCourseDish.find(params[:menu][:first_course_dish_ids])
+    @order.second_course_dish=SecondCourseDish.find(params[:menu][:second_course_dish_ids])
+    @order.drink=Drink.find(params[:menu][:drink_ids])
+    
     respond_to do |format|
       if @order.save
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
