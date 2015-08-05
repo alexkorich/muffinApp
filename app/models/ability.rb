@@ -14,8 +14,7 @@ class Ability
         can :read, :all
         can :read, Menu
         can :create, :orders
-      else
-        can :read, Menu, :date => Date.today
+        can :find_by_date, Menu
       end
     
              # grant access to the dashboard

@@ -4,15 +4,16 @@
   %b Date:
   = @order.date
 %p
-  %b Dish:
-  = @order.dish_id
+  %b Dish1:
+  = @order.first_course_dish_id
+  %b Dish2:
+  = @order.second_course_dish_id
 %p
   %b User:
   = @order.user_id
 %p
-  %b Menu:
-  = @order.menu_id
+ 
 
 = link_to 'Edit', edit_order_path(@order)
-\|
-= link_to 'Back', orders_path
+|
+= link_to 'back', root_path

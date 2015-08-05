@@ -15,13 +15,13 @@
     - @orders.each do |order|
       %tr
         %td= order.date
-        %td= order.dish_id
+        %td= order.drink_id
         %td= order.user_id
-        %td= order.menu_id
-        %td= link_to 'Show', order
-        %td= link_to 'Edit', edit_order_path(order)
-        %td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= order.total_price
+        / %td= link_to 'Show', order
+        / # %td= link_to 'Edit', edit_order_path(order)
+        /%td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Order', new_order_path
+= link_to 'Back', :back

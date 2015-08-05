@@ -1,60 +1,23 @@
-<% if @menu %>
-
-<p id="notice">
-  <%= notice %>
-</p>
-<%= week_calendar start_date:2.weeks.ago, number_of_weeks: 2 do |date| %>
+<% if @menu%>
+  <p id="notice">
+    <%= notice %>
+  </p>
+  <%= week_calendar start_date:1.weeks.ago, number_of_weeks: 2 do |date| %>
   <%= date %>
-  <%= link_to "menu",  controller: "menus", action: "find_by_date",  :date => date %>
-<% end %>
-<p>
-  <b>Today is</b>
-  <%= @menu.date %>
-</p>
-Menu for today:
-<p>
-  <b>First course dishes:</b>
-  
-  <table>
-    <th>Name</th> <th>Price</th>
-    
-    <tbody>
-<% @menu.first_course_dishes.each do |f| %>
-      <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
-    </tbody>
-  </table>
-  
+  <%= link_to "menu",  controller: "menus", action: "find_by_date",  date: date %>
+  <% end %>
+  <p>
+    <b>Today is</b>
+    <%= @menu.date %>
+  </p>
+  Menu for today: 
+  <%= simple_form_for @menu, :url => url_for(:action => 'create_from_menu', :controller => 'orders', :method => "POST"), :method => 'post' do |f| %>
+    <%= f.association :first_course_dishes, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
+    <%= f.association :second_course_dishes, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
+    <%= f.association :drinks, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
+    <%= f.submit "Process order" %>
+  <% end %> 
 
-  <% end %>
-</p>
-<p>
-  <b>Second course dishes:</b>
- 
-  <table>
-    <th>Name</th> <th>Price</th>
-    <tbody>
- <% @menu.second_course_dishes.each do |f| %>
-      <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
-    </tbody>
-  </table>
-  <% end %>
-</p>
-<p>
-<b>Drinks:</b>
- 
-  <table>
-    <th>Name</th> <th>Price</th>
-    <tbody>
-       <% @menu.drinks.each do |f| %>
-      <tr><td> <%= f.name %></td><td> <%= f.price %></td></tr>
-    </tbody>
-  </table>
-  <% end %>
-</p>
-<p></p>
-<%= link_to 'Edit', edit_menu_path(@menu) %>
-|
-<%= link_to 'Back', menus_path %>
 <% else %>
-YAY! NO MENU 4 TODAY YET!
-<%end %>
+  YAY! NO MENU 4 TODAY YET!
+<% end %>

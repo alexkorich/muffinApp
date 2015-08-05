@@ -18,6 +18,8 @@ class Order < ActiveRecord::Base
   def has_items?
     if (self.drink.blank? && self.first_course_dish.blank? && self.second_course_dish.blank?)
       errors.add(:base, "You need at least one item in order!") 
+    else
+      true
     end
   end
 

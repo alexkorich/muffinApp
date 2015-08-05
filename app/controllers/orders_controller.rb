@@ -20,12 +20,16 @@ class OrdersController < ApplicationController
   # GET /orders/1/edit
   def edit
   end
-
+  def create_from_menu
+    puts "TTTTTTTTTTTTTTTT"
+    m=params["menu"]
+    self.create({date:Date.today,first_course_dish_id:m[:first_course_dish_ids],second_course_dish_id:m[:second_course_dish_ids],drink_id:m[:drink_ids]})
+  end
   # POST /orders
   # POST /orders.json
-  def create
+  def create(order_params)
     @order = Order.new(order_params)
-
+    @order.user_id=current_user.id
     respond_to do |format|
       if @order.save
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
@@ -69,6 +73,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:date, :dish_id, :user_id, :menu_id)
+      params.require(:order).permit(:first_course_dish_id, :second_course_dish_id, :drink_id)
     end
 end
