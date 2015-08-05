@@ -23,12 +23,13 @@ class OrdersController < ApplicationController
   def create_from_menu
     puts "TTTTTTTTTTTTTTTT"
     m=params["menu"]
-    self.create({date:Date.today,first_course_dish_id:m[:first_course_dish_ids],second_course_dish_id:m[:second_course_dish_ids],drink_id:m[:drink_ids]})
+    redirect_to :action => 'create', first_course_dish_id: m[:first_course_dish_id], second_course_dish_id: m[:second_course_dish_id], drink_id:m[:drink_id]
   end
   # POST /orders
   # POST /orders.json
-  def create(order_params)
+  def create
     @order = Order.new(order_params)
+    @order.date=Date.today
     @order.user_id=current_user.id
     respond_to do |format|
       if @order.save
@@ -73,6 +74,7 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
+      puts params
       params.require(:order).permit(:first_course_dish_id, :second_course_dish_id, :drink_id)
     end
 end

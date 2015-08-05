@@ -5,14 +5,15 @@
   = @order.date
 %p
   %b Dish1:
-  = @order.first_course_dish_id
+  = @order.first_course_dish.name
   %b Dish2:
-  = @order.second_course_dish_id
+  = @order.second_course_dish.name
 %p
   %b User:
-  = @order.user_id
+  = @order.user
 %p
- 
+  %b price:
+  = @order.total_price
 
 = link_to 'Edit', edit_order_path(@order)
 |
