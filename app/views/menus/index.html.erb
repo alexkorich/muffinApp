@@ -11,7 +11,7 @@
     <%= @menu.date %>
   </p>
   Menu for today: 
-  <%= simple_form_for @menu, :url => url_for(:action => 'create_from_menu', :controller => 'orders', :method => "POST"), :method => 'post' do |f| %>
+  <%= simple_form_for @menu, :url => url_for(:action => 'create_from_menu', :controller => 'orders', :method => "get"), :method => 'post' do |f| %>
     <%= f.association :first_course_dishes, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
     <%= f.association :second_course_dishes, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>
     <%= f.association :drinks, :label_method => lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons %>

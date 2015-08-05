@@ -13,7 +13,8 @@ class Ability
 
         can :read, :all
         can :read, Menu
-        can :create, :orders
+        can :create, Order
+        can :create_from_menu, Order
         can :find_by_date, Menu
       end
     
