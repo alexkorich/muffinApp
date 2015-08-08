@@ -3,9 +3,9 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
-  ROLES = %w[admin customer]
-  has_many :orders
+  
 
+  has_many :orders
   before_create :first_admin
 
   private
