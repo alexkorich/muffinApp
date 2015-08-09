@@ -46,7 +46,7 @@ end
       expect(drink.type).to eq "Drink"
     end
     it 'could be called as dish' do
-      expect(drink.parent).to eq "Dish"
+      expect(drink.class.superclass).to eq Dish
     end
   end 
 
