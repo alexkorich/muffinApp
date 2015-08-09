@@ -1,13 +1,13 @@
-%h1 Listing orders
+%h1 My orders
 
 %table
   %thead
     %tr
       %th Date
-      %th Dish
-      %th User
-      %th Menu
-      %th
+      %th First course
+      %th Second course
+      %th Drink
+      %th Total price
       %th
       %th
 
@@ -15,11 +15,12 @@
     - @orders.each do |order|
       %tr
         %td= order.date
-        %td= order.drink
-        %td= order.user
-        / %td= order.total_price
-        / %td= link_to 'Show', order
-        / # %td= link_to 'Edit', edit_order_path(order)
+        %td= order.first_course_dish.name
+        %td= order.second_course_dish.name
+        %td= order.drink.name
+        %td= order.total_price
+        %td= link_to 'Show', order
+        %td= link_to 'Edit', edit_order_path(order)
         /%td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br

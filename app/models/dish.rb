@@ -8,6 +8,7 @@ class Dish < ActiveRecord::Base
 
   has_many :orders
   validates :name, :price, :quantity, presence: true
+  validates :name, uniqueness: true
   scope :first_course_dishes, -> { where(type: 'FirstCourseDish') } 
   scope :drinks, -> { where(type: 'Drink') } 
   scope :second_course_dishes, -> { where(type: 'SecondCourseDish') }

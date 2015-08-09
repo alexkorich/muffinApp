@@ -3,18 +3,24 @@
 %p
   %b Date:
   = @order.date
-%p
-  %b Dish1:
+%ul
+  %li Dish1:
   = @order.first_course_dish.name
-  %b Dish2:
+  = @order.first_course_dish.price
+  %li Dish2:
   = @order.second_course_dish.name
+  = @order.second_course_dish.price
+  %li Drink:
+  = @order.drink.name
+  = @order.drink.price
 %p
   %b User:
-  = @order.user
+  = @order.user.name
+  = @order.user.email
+  id:
+  = @order.user.id
 %p
-  %b price:
+  %b Total price:
   = @order.total_price
 
-= link_to 'Edit', edit_order_path(@order)
-|
 = link_to 'back', root_path

@@ -1,7 +1,7 @@
 class Order < ActiveRecord::Base
   
   validates :user, :date, presence:true
-  validates :date, uniqueness:true
+  # validates :date, uniqueness:true
   validate :has_items?
   belongs_to :user
 
