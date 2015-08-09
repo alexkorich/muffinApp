@@ -61,8 +61,6 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
-    codeclimate-test-reporter (0.4.7)
-      simplecov (>= 0.7.1, < 1.0.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -270,7 +268,6 @@ DEPENDENCIES
   cancancan (~> 1.10)
   capybara
   carrierwave
-  codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise
@@ -290,6 +287,7 @@ DEPENDENCIES
   shoulda-matchers
   simple_calendar (~> 1.1.0)
   simple_form
+  simplecov
   spring
   turbolinks
   uglifier (>= 1.3.0)
