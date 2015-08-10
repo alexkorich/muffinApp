@@ -9,10 +9,12 @@ class Ability
         can :access, :rails_admin   # grant access to rails_admin
         can :dashboard 
         can :manage, :all
+        can :access
       elsif user.role==="customer"
 
-        can :read, :all
+        # can :read, :all
         can :read, Menu
+        can :read, Order
         can :create, Order
         can :create_from_menu, Order
         can :find_by_date, Menu

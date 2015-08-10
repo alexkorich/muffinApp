@@ -1,0 +1,4 @@
+= week_calendar start_date:1.weeks.ago, number_of_weeks: 2 do |date|
+  
+  = link_to "orders for",  controller: "admin/orders", action: "find_by_date",  date: date
+  = date 

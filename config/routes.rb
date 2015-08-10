@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    get '/' => 'dashboard#index'
+
+    resources :dishes
+    resources :orders
+    resources :users
+
+    get 'orders/find_by_date/:date' => 'orders#find_by_date'
+    get 'orders/find_by_user/:id' => 'orders#find_by_user'
+    get 'orders/show_by_day/' => 'orders#show_by_day'
+  end
+
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
   devise_for :users
   get 'menus/find_by_date' => 'menus#find_by_date'
@@ -57,7 +69,7 @@ Rails.application.routes.draw do
   #   resources :photos, concerns: :toggleable
 
   # Example resource route within a namespace:
-  #   namespace :admin do
+  #   
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products

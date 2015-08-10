@@ -1,0 +1,7 @@
+- @users.each do |user|
+  %ul
+    %li= user.name
+    %li= user.email
+    %li= link_to "orders", controller: "admin/orders", action: "find_by_user",  id: user.id
+
+= link_to 'Back', '/admin'

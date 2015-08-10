@@ -19,10 +19,7 @@
         %td= order.second_course_dish.name
         %td= order.drink.name
         %td= order.total_price
-        %td= link_to 'Show', order
-        %td= link_to 'Edit', edit_order_path(order)
-        /%td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+        %td= link_to 'Show', admin/order
 %br
 
 = link_to 'Back', :back

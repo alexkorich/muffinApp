@@ -1,12 +1,12 @@
-<% if @menu%>
-  <p id="notice">
+ <p id="notice">
     <%= notice %>
   </p>
-  <%= week_calendar start_date:1.weeks.ago, number_of_weeks: 2 do |date| %>
+<%= week_calendar start_date:1.weeks.ago, number_of_weeks: 2 do |date| %>
   <%= date %>
   <%= link_to "menu",  controller: "menus", action: "find_by_date",  date: date %>
   <% end %>
-  <p>
+<% if @menu%>
+   <p>
     <b>Today is</b>
     <%= @menu.date %>
   </p>
@@ -19,5 +19,7 @@
   <% end %> 
 
 <% else %>
-  YAY! NO MENU 4 TODAY YET!
+<br>
+<br>
+  Yay! No menu for today yet!
 <% end %>
