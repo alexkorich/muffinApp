@@ -1,2 +1,42 @@
-%h1 Menu for today :
-%p lel
+-if @menu
+  %div 
+    Menu for today:
+    %table
+      %thead
+        %tr
+          %th 
+            %tr First course 
+            %tr Price
+          %th 
+            %tr Second course 
+            %tr Price
+          %th 
+            %tr Drink
+            %tr Price  
+          %th Email
+          %th Role
+          %th Orders
+          %th
+          %th
+      %tbody
+        - @menu.first_course_dishes do |d|
+          %tr
+            %td= d.name
+            %td= d.price
+        - @menu.second_course_dishes do |d|
+          %tr
+            %td= d.name
+            %td= d.price
+        - @menu.drinks do |d|
+          %tr
+            %td= d.name
+            %td= d.price
+-else
+  %div Menu for today isn't created yet!
+  %div 
+    = simple_form_for :menu, :url => url_for(:action => 'create', :controller => 'admin/menus'), :method => 'post' do |menu|
+      = menu.collection_check_boxes :first, @first, :id, :name
+      = menu.collection_check_boxes :second, @second, :id, :name
+      = menu.collection_check_boxes :drink, @drink, :id, :name
+      = menu.submit "Create menu" 
+   

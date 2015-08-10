@@ -11,6 +11,7 @@
   <div id="user-nav">
   <%= link_to "Home", root_path%>
   <%= link_to "Admin", admin_path  %>
+  <%= link_to "Rails admin", rails_admin_path  %>
     <% if user_signed_in? %>    
       <%= link_to 'Orders', admin_orders_path %> |
       <%= link_to 'Users', admin_users_path %> |

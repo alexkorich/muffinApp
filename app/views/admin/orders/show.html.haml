@@ -21,6 +21,6 @@
   = @order.user.id
 %p
   %b Total price:
-  = @order.total_price
+  = @order.total_price.round(2)
 
 = link_to 'back','admin/orders'

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   namespace :admin do
     get '/' => 'dashboard#index'
 
@@ -12,6 +11,7 @@ Rails.application.routes.draw do
     resources :dishes
     resources :orders 
     resources :users
+    resources :menus
 
   end
 
