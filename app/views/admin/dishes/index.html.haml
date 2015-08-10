@@ -1,2 +1,23 @@
-%h1 Admin::Dishes#index
-%p Find me in app/views/admin/dishes/index.html.haml
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Type
+      %th Price
+      %th
+  %tbody
+    - @dishes.each do |d|
+      %tr
+        %td= d.name
+        %td= d.type
+        %td= d.price
+        / %th =link_to 
+%br
+%div Create new dish:
+= simple_form_for :dish, :url => url_for(action: 'create', controller: 'admin/dishes'), :method => 'post' do |dish|
+  = dish.input :name, label: 'Dish name'
+  = dish.input :type, collection: ["FirstCourseDish", "SecondCourseDish", "Drink"]
+  = dish.input :quantity, as: :integer
+  = dish.input :price, as: :float
+  = dish.submit "Create dish" 

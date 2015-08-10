@@ -8,14 +8,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="user-nav">
+  <div id="user-nav"; class='navbar navbar-default'>
   <%= link_to "Home", root_path%>
   <%= link_to "Admin", admin_path  %>
   <%= link_to "Rails admin", rails_admin_path  %>
     <% if user_signed_in? %>    
       <%= link_to 'Orders', admin_orders_path %> |
       <%= link_to 'Users', admin_users_path %> |
-
+      <%= link_to 'Dishes', admin_dishes_path %> |
       <%= link_to "Logout", destroy_user_session_path, method: :get %>
    <% end %>
   </div>
