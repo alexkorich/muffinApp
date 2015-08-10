@@ -35,8 +35,21 @@
   %div Menu for today isn't created yet!
   %div 
     = simple_form_for :menu, :url => url_for(:action => 'create', :controller => 'admin/menus'), :method => 'post' do |menu|
-      = menu.collection_check_boxes :first, @first, :id, :name
-      = menu.collection_check_boxes :second, @second, :id, :name
-      = menu.collection_check_boxes :drink, @drink, :id, :name
+      %h3
+        First course dishes:
+      %div
+        = menu.collection_check_boxes :first, @first, :id, :name do |b|
+          .checkbox= b.label { b.check_box + b.text }
+      %h3
+        Second course dishes:
+      %div
+        = menu.collection_check_boxes :second, @second, :id, :name do |b|
+          .checkbox= b.label { b.check_box + b.text }
+      %h3
+        Drinks:
+      %div
+        = menu.collection_check_boxes :drink, @drink, :id, :name do |b|
+          .checkbox= b.label { b.check_box + b.text }
+      %br
+      %br
       = menu.submit "Create menu" 
-   
