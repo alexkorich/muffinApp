@@ -8,12 +8,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="user-nav">
+  <div id="user-nav" class='navbar navbar-default'>
   <%= link_to "Home", root_path%>
     <% if user_signed_in? %>
       Logged in as <strong><%= current_user.name%></strong><strong>, <%=current_user.email %></strong>.
       <% if current_user.role==="admin" %>
-        <%= link_to("Admin page", rails_admin.dashboard_path) %>
+        <%= link_to("Admin page", '/admin') %> |
+        <%= link_to("Rails admin page", rails_admin.dashboard_path) %> |
       <% end %>
       <%= link_to 'My orders', orders_path %> |
       <%= link_to 'Edit profile', edit_user_registration_path %> |

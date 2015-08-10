@@ -46,8 +46,6 @@ gem 'habtm_generator', :group => :development
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
-
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   # Access an IRB console on exception pages or by using <%= console %> in views
