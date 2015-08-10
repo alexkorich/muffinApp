@@ -13,7 +13,6 @@
             %tr
               %td= d.name
               %td= d.price
-      %br
       %h3 Second course:
       %table
         %thead
@@ -24,8 +23,7 @@
           - @menu.second_course_dishes.each do |d|
             %tr
               %td= d.name
-              %td= d.price
-      %br        
+              %td= d.price      
       %h3 Drinks:
       %table
         %thead
@@ -37,6 +35,41 @@
             %tr
               %td= d.name
               %td= d.price
+
+  -if @orders.exists?
+    %h2 Todays orders:
+    %table
+      %thead
+        %tr
+          %th User
+          %th First course
+          %th Second course
+          %th Drink
+          %th Total price
+          %th
+          %th
+
+      %tbody
+        - @orders.each do |order|
+          %tr
+            %td= order.user.name 
+            %td= order.first_course_dish.name
+            %td= order.second_course_dish.name
+            %td= order.drink.name
+            %td= order.total_price.round(2)
+            %td= link_to 'Show', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
+
+    - a=0
+    - @orders.each do |order|
+      - a+=order.total_price
+    %br
+    %br
+    %div 
+      Total price for day: 
+      = a.round(2)
+
+
+
 -else
   %div Menu for today isn't created yet!
   %div 
