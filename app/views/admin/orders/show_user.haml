@@ -1,28 +1,28 @@
 %h1 
   Orders for 
-  = @orders[0].date 
+  = @orders[0].user.name
 %table
   %thead
     %tr
-      %th User
+      %th Date
       %th First course
       %th Second course
       %th Drink
       %th Total price
-      %th
+      %th Id
       %th
 
   %tbody
     -if @orders
       - @orders.each do |order|
         %tr
-          %td= order.user.name 
+          %td= order.date
           %td= order.first_course_dish.name
           %td= order.second_course_dish.name
           %td= order.drink.name
           %td= order.total_price.round(2)
-          %td= link_to 'Show', controller: "admin/orders", action: :show, id:order.id, type: "one"
-
+          %td= link_to 'Show', controller: "admin/orders", action: :show, date:"222", id:order.id, type: "one"
+          %td= order.id
 - a=0
 - @orders.each do |order|
   - a+=order.total_price

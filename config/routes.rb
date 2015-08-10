@@ -3,13 +3,16 @@ Rails.application.routes.draw do
   namespace :admin do
     get '/' => 'dashboard#index'
 
-    resources :dishes
-    resources :orders
-    resources :users
 
     get 'orders/find_by_date/:date' => 'orders#find_by_date'
     get 'orders/find_by_user/:id' => 'orders#find_by_user'
-    get 'orders/show_by_day/' => 'orders#show_by_day'
+    
+    get 'orders/:date' => 'orders#show'
+    # get 'orders/show_by_date/:date' => 'orders#show'
+    resources :dishes
+    resources :orders 
+    resources :users
+
   end
 
   mount RailsAdmin::Engine => '/rails_admin', as: 'rails_admin'
