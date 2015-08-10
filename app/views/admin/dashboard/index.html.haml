@@ -1,36 +1,42 @@
 -if @menu
   %div 
-    Menu for today:
-    %table
-      %thead
-        %tr
-          %th 
-            %tr First course 
-            %tr Price
-          %th 
-            %tr Second course 
-            %tr Price
-          %th 
-            %tr Drink
-            %tr Price  
-          %th Email
-          %th Role
-          %th Orders
-          %th
-          %th
-      %tbody
-        - @menu.first_course_dishes do |d|
+    %h2 Menu for today:
+    %div 
+      %h3 First course:
+      %table
+        %thead
           %tr
-            %td= d.name
-            %td= d.price
-        - @menu.second_course_dishes do |d|
+            %th Name
+            %th Price
+        %tbody
+          - @menu.first_course_dishes.each do |d|
+            %tr
+              %td= d.name
+              %td= d.price
+      %br
+      %h3 Second course:
+      %table
+        %thead
           %tr
-            %td= d.name
-            %td= d.price
-        - @menu.drinks do |d|
+            %th Name
+            %th Price
+        %tbody
+          - @menu.second_course_dishes.each do |d|
+            %tr
+              %td= d.name
+              %td= d.price
+      %br        
+      %h3 Drinks:
+      %table
+        %thead
           %tr
-            %td= d.name
-            %td= d.price
+            %th Name
+            %th Price
+        %tbody
+          - @menu.drinks.each do |d|
+            %tr
+              %td= d.name
+              %td= d.price
 -else
   %div Menu for today isn't created yet!
   %div 
