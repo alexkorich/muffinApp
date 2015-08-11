@@ -9,18 +9,18 @@ json.orders @orders.where(date: Date.today) do |order|
   json.date order.date
 
   json.first_course do
-    order.first_course_dish.name
-    order.first_course_dish.price
+    json.name order.first_course_dish.name
+    json.price order.first_course_dish.price
   end
 
   json.second_course do
-    order.second_course_dish.name
-    order.second_course_dish.price
+    json.name order.second_course_dish.name
+    json.price order.second_course_dish.price
   end
 
   json.drink do
-    order.drink.name
-    order.drink.price
+    json.name order.drink.name
+    json.price order.drink.price
   end
 
   json.total_price order.total_price
