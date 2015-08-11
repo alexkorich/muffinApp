@@ -15,9 +15,9 @@
     - @orders.each do |order|
       %tr
         %td= order.date
-        %td= order.first_course_dish.name
-        %td= order.second_course_dish.name
-        %td= order.drink.name
+        %td= order.first_course_dish.name if order.first_course_dish 
+        %td= order.second_course_dish.name if order.second_course_dish
+        %td= order.drink.name if order.drink
         %td= order.total_price
         %td= link_to 'Show', order
 %br

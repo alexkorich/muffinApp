@@ -58,15 +58,10 @@
             %td= order.drink.name
             %td= order.total_price.round(2)
             %td= link_to 'Show', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
-
-    - a=0
-    - @orders.each do |order|
-      - a+=order.total_price
     %br
     %br
-    %div 
       Total price for day: 
-      = a.round(2)
+      =@orders.inject(0) {|s, o| s+o.total_price}.round(2)
 
 
 
@@ -74,7 +69,7 @@
   %div Menu for today isn't created yet!
   %div 
     = simple_form_for :menu, :url => url_for(:action => 'create', :controller => 'admin/menus'), :method => 'post' do |menu|
-      %h3
+      %h
         First course dishes:
       %div
         = menu.collection_check_boxes :first, @first, :id, :name do |b|

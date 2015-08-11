@@ -24,22 +24,26 @@ class OrdersController < ApplicationController
  
   def create
     params[:order]=params["menu"]
-    
-    @order = Order.new(order_params)
-    @order.date=Date.today
-    @order.user_id=current_user.id
-    @order.first_course_dish=FirstCourseDish.find(params[:menu][:first_course_dish_ids])
-    @order.second_course_dish=SecondCourseDish.find(params[:menu][:second_course_dish_ids])
-    @order.drink=Drink.find(params[:menu][:drink_ids])
-    
-    respond_to do |format|
-      if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
-        format.json { render :show, status: :created, location: @order }
-      else
-        format.html { render :new }
-        format.json { render json: @order.errors, status: :unprocessable_entity }
+    if (params[:order])&&(params[:order][:first_course_dish_ids] || params[:order][:second_course_dish_ids] || params[:order][:drink_ids])
+      @order = Order.new(order_params)
+      @order.date=Date.today
+      @order.user_id=current_user.id
+
+      @order.first_course_dish=FirstCourseDish.find(params[:order][:first_course_dish_ids]) if params[:order][:first_course_dish_ids]
+      @order.second_course_dish=SecondCourseDish.find(params[:order][:second_course_dish_ids]) if params[:order][:second_course_dish_ids]
+      @order.drink=Drink.find(params[:order][:drink_ids]) if params[:order][:drinks]
+      
+      respond_to do |format|
+        if @order.save
+          format.html { render :show, location: @order, notice: 'Order was successfully created.' }
+          format.json { render :show, status: :created, location: @order }
+        else
+          format.html { redirect_to :back, notice: @order.errors }
+          format.json { render json: @order.errors, status: :unprocessable_entity }
+        end
       end
+    else
+     redirect_to :back, notice: 'You need at least one item!'
     end
   end
 
@@ -75,7 +79,7 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      puts params
+      
       params.require(:order).permit(:first_course_dish_id, :second_course_dish_id, :drink_id)
     end
 end

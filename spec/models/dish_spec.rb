@@ -7,47 +7,64 @@ RSpec.describe Dish, type: :model do
   let(:drink) { FactoryGirl.create :drink}
 
 
-  it 'invalid without name' do 
-  expect(FactoryGirl.build :dish, name: nil).not_to be_valid
-  end
-
-it 'must have unique name' do 
-  FactoryGirl.create :dish, name: "dish1"
-  expect(FactoryGirl.build :dish, name:  "dish1").not_to be_valid
-  end
-it 'invalid without price' do 
-  expect(FactoryGirl.build :dish, price: nil).not_to be_valid
-  end
-
-it 'invalid without quantity' do 
-  expect(FactoryGirl.build :dish, quantity: nil).not_to be_valid
-  end
-it 'has many menus' do 
-  expect(dish).to respond_to :menus
-  end
-it 'has many orders' do 
-  expect(dish).to respond_to :orders
-  end
-it 'has many orders' do 
-  expect(dish).to respond_to :orders
-end
-  context "type" do
-    it 'has type' do
-      expect(dish).to respond_to :type
+    it 'invalid without name' do 
+    expect(FactoryGirl.build :dish, name: nil).not_to be_valid
     end
 
-    it 'could be 1st course' do
-      expect(first_dish.type).to eq "FirstCourseDish"
+  it 'must have unique name' do 
+    FactoryGirl.create :dish, name: "dish1"
+    expect(FactoryGirl.build :dish, name:  "dish1").not_to be_valid
     end
-    it 'could be 2st course' do
-      expect(second_dish.type).to eq "SecondCourseDish"
+    
+  it 'must have positive price' do 
+     expect(FactoryGirl.build :dish, price: -100).not_to be_valid
     end
-    it 'could be drink' do
-      expect(drink.type).to eq "Drink"
+
+  it 'must have not-null price' do 
+     expect(FactoryGirl.build :dish, price: 0).not_to be_valid
     end
-    it 'could be called as dish' do
-      expect(drink.class.superclass).to eq Dish
+
+  it 'must have positive quantity' do 
+     expect(FactoryGirl.build :dish, quantity: -1).not_to be_valid
     end
-  end 
+
+  it 'can have null quantity' do 
+     expect(FactoryGirl.build :dish, quantity: 0).to be_valid
+    end
+
+  it 'invalid without price' do 
+    expect(FactoryGirl.build :dish, price: nil).not_to be_valid
+    end
+
+  it 'invalid without quantity' do 
+    expect(FactoryGirl.build :dish, quantity: nil).not_to be_valid
+    end
+  it 'has many menus' do 
+    expect(dish).to respond_to :menus
+    end
+  it 'has many orders' do 
+    expect(dish).to respond_to :orders
+    end
+  it 'has many orders' do 
+    expect(dish).to respond_to :orders
+  end
+    context "type" do
+      it 'has type' do
+        expect(dish).to respond_to :type
+      end
+
+  it 'could be 1st course' do
+    expect(first_dish.type).to eq "FirstCourseDish"
+  end
+  it 'could be 2st course' do
+    expect(second_dish.type).to eq "SecondCourseDish"
+  end
+  it 'could be drink' do
+    expect(drink.type).to eq "Drink"
+  end
+  it 'could be called as dish' do
+    expect(drink.class.superclass).to eq Dish
+  end
+end 
 
 end

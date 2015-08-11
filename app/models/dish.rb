@@ -9,6 +9,10 @@ class Dish < ActiveRecord::Base
   has_many :orders
   validates :name, :price, :quantity, presence: true
   validates :name, uniqueness: true
+  validates :price, :numericality => { greater_than: 0 }
+  validates :quantity, :numericality => { greater_than_or_equal_to: 0 }
+
+
   scope :first_course_dishes, -> { where(type: 'FirstCourseDish') } 
   scope :drinks, -> { where(type: 'Drink') } 
   scope :second_course_dishes, -> { where(type: 'SecondCourseDish') }

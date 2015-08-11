@@ -25,6 +25,10 @@ class Order < ActiveRecord::Base
   end
 
   def total_price
-    self.drink.price+self.first_course_dish.price+self.second_course_dish.price
+    a=0
+    a+=self.drink.price if self.drink
+    a+=self.first_course_dish.price if self.first_course_dish
+    a+=self.second_course_dish.price if self.second_course_dish
+    a.round(2)
   end
 end

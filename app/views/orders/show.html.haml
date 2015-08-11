@@ -1,18 +1,19 @@
+-flash.each do |name, msg|
+  = content_tag :div, msg, id: "flash-#{name}"
 %p#notice= notice
-
 %p
   %b Date:
   = @order.date
 %ul
   %li Dish1:
-  = @order.first_course_dish.name
-  = @order.first_course_dish.price
+  = @order.first_course_dish.name if @order.first_course_dish
+  = @order.first_course_dish.price if @order.first_course_dish
   %li Dish2:
-  = @order.second_course_dish.name
-  = @order.second_course_dish.price
+  = @order.second_course_dish.name if @order.second_course_dish
+  = @order.second_course_dish.price if @order.second_course_dish
   %li Drink:
-  = @order.drink.name
-  = @order.drink.price
+  = @order.drink.name if @order.drink
+  = @order.drink.price if @order.drink
 %p
   %b User:
   = @order.user.name
