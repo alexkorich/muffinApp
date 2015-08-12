@@ -16,7 +16,7 @@ class Admin::OrdersController < ApplicationController
   end
 
   def find_by_user
-    @orders=Order.where(user_id:params[:id])
+    @orders=Order.where(user_id:params[:user_id])
     if @orders.exists?
       render 'show_user'
     else

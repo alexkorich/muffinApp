@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 
     get 'orders/find_by_date/:date' => 'orders#find_by_date'
-    get 'orders/find_by_user/:id' => 'orders#find_by_user'
+    get 'orders/find_by_user/:user_id' => 'orders#find_by_user'
     
     get 'orders/:date' => 'orders#show'
     # get 'orders/show_by_date/:date' => 'orders#show'
