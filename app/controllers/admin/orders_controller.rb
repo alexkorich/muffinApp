@@ -6,7 +6,6 @@ class Admin::OrdersController < ApplicationController
  end
 
   def find_by_date
-   
     @orders1=Order.where(date:params[:date])
     if @orders1.exists?
       redirect_to :controller => 'admin/orders', :action => 'show', date:params[:date], type:"many"
@@ -25,16 +24,14 @@ class Admin::OrdersController < ApplicationController
   end
 
   def show
-      if params[:type]==="one"
-      
-       @order=Order.find(params[:id])
-       if @order
-        render 'show'
-        else
-           redirect_to 'admin/orders', flash: {error: "Oops, there is no orders for that day!"}
-        end
+    if params[:type]==="one"
+     @order=Order.find(params[:id])
+     if @order
+      render 'show'
+      else
+         redirect_to 'admin/orders', flash: {error: "Oops, there is no orders for that day!"}
+      end
     elsif params[:type]==="many"
-      puts "MANYMANYMANYMANYMANYMANYMANYMANY"
       @orders=Order.where(date:params[:date])
       if @orders.exists?
       render 'show_by_day'
@@ -42,14 +39,5 @@ class Admin::OrdersController < ApplicationController
       redirect_to 'admin/orders', flash: {error: "Oops, there is no orders for that day!"}
       end 
     end
-  end
-  def show_by_day
-    
-  end
-
-  def update
-  end
-
-  def destroy
   end
 end

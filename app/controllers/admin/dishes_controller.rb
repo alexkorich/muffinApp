@@ -8,14 +8,7 @@ layout 'admin/layouts/application'
   end
 
   def create
-    puts "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSs"
-    puts params
-    @dish=Dish.new
-    @dish.name=params[:dish][:name]
-    @dish.type=params[:dish][:type]
-    @dish.quantity=params[:dish][:quantity]
-    @dish.price=params[:dish][:price]
-
+    @dish=Dish.new(dish_params)
     respond_to do |format|
       if @dish.save
         format.html { redirect_to :back, notice: 'Dish was successfully created.' }
@@ -27,9 +20,8 @@ layout 'admin/layouts/application'
     end
   end
 
-  def update
-  end
-
-  def destroy
-  end
+    def dish_params
+      
+      params.require(:dish).permit(:name, :type, :quantity, :price)
+    end
 end

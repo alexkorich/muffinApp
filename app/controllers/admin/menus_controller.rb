@@ -15,8 +15,6 @@ class Admin::MenusController < ApplicationController
 
 
     def create
-      puts "LLLLLLLLLLLLLLLLLLLLLLLLLLLL"
-      puts params
       @menu = Menu.new
       @menu.date=Date.today
       params[:menu][:first].each do |k|

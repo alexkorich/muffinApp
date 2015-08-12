@@ -1,0 +1,1002 @@
+F.FFFFFFFFFFF.FFF**F*************#<Order:0x00000006fbe310>
+..FFFF............FFFF*********.............................................***.................**...FFFFFFF................FFFF.FFF.F.F.FFF................*****************FFFFFFFFFFFFFFFF
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) MenusController GET #index assigns all menus as @menus
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:40
+
+  2) MenusController GET #show assigns the requested menu as @menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:48
+
+  3) MenusController GET #edit assigns the requested menu as @menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:63
+
+  4) MenusController POST #create with valid params creates a new Menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:72
+
+  5) MenusController POST #create with valid params assigns a newly created menu as @menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:78
+
+  6) MenusController POST #create with valid params redirects to the created menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:84
+
+  7) MenusController POST #create with invalid params assigns a newly created but unsaved menu as @menu
+     # Add a hash of attributes invalid for your model
+     # ./spec/controllers/menus_controller_spec.rb:91
+
+  8) MenusController POST #create with invalid params re-renders the 'new' template
+     # Add a hash of attributes invalid for your model
+     # ./spec/controllers/menus_controller_spec.rb:96
+
+  9) MenusController PUT #update with valid params updates the requested menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:109
+
+  10) MenusController PUT #update with valid params assigns the requested menu as @menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:116
+
+  11) MenusController PUT #update with valid params redirects to the menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:122
+
+  12) MenusController PUT #update with invalid params assigns the menu as @menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:130
+
+  13) MenusController PUT #update with invalid params re-renders the 'edit' template
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:136
+
+  14) MenusController DELETE #destroy destroys the requested menu
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:145
+
+  15) MenusController DELETE #destroy redirects to the menus list
+     # Add a hash of attributes valid for your model
+     # ./spec/controllers/menus_controller_spec.rb:152
+
+  16) Admin::DashboardHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/admin/dashboard_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/admin/dashboard_helper_spec.rb:14
+
+  17) Admin::DishesHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/admin/dishes_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/admin/dishes_helper_spec.rb:14
+
+  18) Admin::MenusHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/admin/menus_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/admin/menus_helper_spec.rb:14
+
+  19) Admin::OrdersHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/admin/orders_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/admin/orders_helper_spec.rb:14
+
+  20) Admin::UsersHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/admin/users_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/admin/users_helper_spec.rb:14
+
+  21) DishesHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/dishes_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/dishes_helper_spec.rb:14
+
+  22) MenusHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/menus_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/menus_helper_spec.rb:14
+
+  23) OrdersHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/orders_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/orders_helper_spec.rb:14
+
+  24) UsersHelper add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/helpers/users_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/users_helper_spec.rb:14
+
+  25) Menu must have 1st dish
+     # Temporarily skipped with xit
+     # ./spec/models/menu_spec.rb:14
+
+  26) Menu must have 2nd dish
+     # Temporarily skipped with xit
+     # ./spec/models/menu_spec.rb:18
+
+  27) Menu must have drinks
+     # Temporarily skipped with xit
+     # ./spec/models/menu_spec.rb:22
+
+  28) User must have >8 chars password
+     # Temporarily skipped with xit
+     # ./spec/models/user_spec.rb:25
+
+  29) User 's password must equal password confirmation
+     # Temporarily skipped with xit
+     # ./spec/models/user_spec.rb:30
+
+  30) dashboard/index.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/dashboard/index.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/dashboard/index.html.haml_spec.rb:4
+
+  31) dishes/destroy.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/dishes/destroy.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/dishes/destroy.html.haml_spec.rb:4
+
+  32) dishes/index.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/dishes/index.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/dishes/index.html.haml_spec.rb:4
+
+  33) dishes/show.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/dishes/show.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/dishes/show.html.haml_spec.rb:4
+
+  34) dishes/update.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/dishes/update.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/dishes/update.html.haml_spec.rb:4
+
+  35) menus/create.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/menus/create.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/menus/create.html.haml_spec.rb:4
+
+  36) menus/destroy.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/menus/destroy.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/menus/destroy.html.haml_spec.rb:4
+
+  37) menus/index.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/menus/index.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/menus/index.html.haml_spec.rb:4
+
+  38) menus/show.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/menus/show.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/menus/show.html.haml_spec.rb:4
+
+  39) orders/destroy.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/orders/destroy.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/orders/destroy.html.haml_spec.rb:4
+
+  40) orders/index.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/orders/index.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/orders/index.html.haml_spec.rb:4
+
+  41) orders/show.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/orders/show.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/orders/show.html.haml_spec.rb:4
+
+  42) orders/update.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/orders/update.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/orders/update.html.haml_spec.rb:4
+
+  43) users/destroy.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/users/destroy.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/users/destroy.html.haml_spec.rb:4
+
+  44) users/index.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/users/index.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/users/index.html.haml_spec.rb:4
+
+  45) users/show.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/users/show.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/users/show.html.haml_spec.rb:4
+
+  46) users/update.html.haml add some examples to (or delete) /home/korich/Desktop/muffinApp/spec/views/admin/users/update.html.haml_spec.rb
+     # Not yet implemented
+     # ./spec/views/admin/users/update.html.haml_spec.rb:4
+
+Failures:
+
+  1) Admin::DashboardController GET #index returns http success
+     Failure/Error: get '/admin'
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"/admin", :controller=>"admin/dashboard"}
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+     # ./spec/controllers/admin/dashboard_controller_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+  2) Admin::DishesController GET #show returns http success
+     Failure/Error: get :show
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"show", :controller=>"admin/dishes"}
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+     # ./spec/controllers/admin/dishes_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  3) Admin::DishesController GET #update returns http success
+     Failure/Error: get :update
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"update", :controller=>"admin/dishes"}
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+     # ./spec/controllers/admin/dishes_controller_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  4) Admin::DishesController GET #destroy returns http success
+     Failure/Error: get :destroy
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"destroy", :controller=>"admin/dishes"}
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+     # ./spec/controllers/admin/dishes_controller_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  5) Admin::MenusController GET #index returns http success
+     Failure/Error: expect(response).to have_http_status(:success)
+       expected the response to have a success status code (2xx) but it was 302
+     # ./spec/controllers/admin/menus_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  6) Admin::MenusController GET #show returns http success
+     Failure/Error: get :show
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"show", :controller=>"admin/menus"}
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+     # ./spec/controllers/admin/menus_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  7) Admin::MenusController GET #create returns http success
+     Failure/Error: expect(response).to have_http_status(:success)
+       expected the response to have a success status code (2xx) but it was 302
+     # ./spec/controllers/admin/menus_controller_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  8) Admin::MenusController GET #destroy returns http success
+     Failure/Error: get :destroy
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"destroy", :controller=>"admin/menus"}
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+     # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+     # ./spec/controllers/admin/menus_controller_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  9) Admin::OrdersController GET #index returns http success
+     Failure/Error: expect(response).to have_http_status(:success)
+       expected the response to have a success status code (2xx) but it was 302
+     # ./spec/controllers/admin/orders_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  10) Admin::OrdersController GET #show returns http success
+      Failure/Error: get :show
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"show", :controller=>"admin/orders"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/admin/orders_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  11) Admin::OrdersController GET #update returns http success
+      Failure/Error: get :update
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"update", :controller=>"admin/orders"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/admin/orders_controller_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  12) Admin::OrdersController GET #destroy returns http success
+      Failure/Error: get :destroy
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"destroy", :controller=>"admin/orders"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/admin/orders_controller_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  13) Admin::UsersController GET #show returns http success
+      Failure/Error: get :show
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"show", :controller=>"admin/users"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/admin/users_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  14) Admin::UsersController GET #update returns http success
+      Failure/Error: get :update
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"update", :controller=>"admin/users"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/admin/users_controller_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  15) Admin::UsersController GET #destroy returns http success
+      Failure/Error: get :destroy
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"destroy", :controller=>"admin/users"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/admin/users_controller_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  16) MenusController GET #new assigns a new menu as @menu
+      Failure/Error: get :new, {}, valid_session
+      ActionController::UrlGenerationError:
+        No route matches {:action=>"new", :controller=>"menus"}
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:729:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:760:in `generate'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:755:in `generate_extras'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:750:in `extra_keys'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:208:in `assign_parameters'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:619:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:65:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `block in process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `catch'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:72:in `_catch_warden'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/lib/devise/test_helpers.rb:19:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_controller/test_case.rb:508:in `get'
+      # ./spec/controllers/menus_controller_spec.rb:57:in `block (3 levels) in <top (required)>'
+
+  17) OrdersController POST #create with valid params creates a new Order
+      Failure/Error: expect {
+        expected #count to have changed by 1, but was changed by 0
+      # ./spec/controllers/orders_controller_spec.rb:38:in `block (4 levels) in <top (required)>'
+
+  18) OrdersController POST #create with valid params assigns a newly created order as @order
+      Failure/Error: expect(assigns(:order)).to be_a(Order)
+        expected nil to be a kind of Order(id: integer, date: date, user_id: integer, created_at: datetime, updated_at: datetime, drink_id: integer, first_course_dish_id: integer, second_course_dish_id: integer)
+      # ./spec/controllers/orders_controller_spec.rb:45:in `block (4 levels) in <top (required)>'
+
+  19) OrdersController POST #create with valid params redirects to the created order
+      Failure/Error: expect(response).to redirect_to(Order.last)
+        Expected response to be a redirect to <http://test.host/orders/5> but was a redirect to <http://test.host/>.
+        Expected "http://test.host/orders/5" to be === "http://test.host/".
+      # ./spec/controllers/orders_controller_spec.rb:51:in `block (4 levels) in <top (required)>'
+
+  20) OrdersController POST #create with unvalid params re-renders the 'new' template
+      Failure/Error: expect(response).to redirect_to("back")
+        Expected response to be a redirect to <http://test.hostback> but was a redirect to <http://test.host/>.
+        Expected "http://test.hostback" to be === "http://test.host/".
+      # ./spec/controllers/orders_controller_spec.rb:57:in `block (4 levels) in <top (required)>'
+
+  21) User sees weekdays and menu menu created message
+      Failure/Error: #     expect(page).to have_content "Menu for today:"
+        expected to find text "Menu for today:" in "Home Logged in as John, user@example.com. My orders | Edit profile | Logout Welcome! You have signed up successfully. «August 2015»MonTueWedThuFriSatSun 2015-08-03 menu 2015-08-04 menu 2015-08-05 menu 2015-08-06 menu 2015-08-07 menu 2015-08-08 menu 2015-08-09 menu 2015-08-10 menu 2015-08-11 menu 2015-08-12 menu 2015-08-13 menu 2015-08-14 menu 2015-08-15 menu 2015-08-16 menu Yay! No menu for today yet!"
+      # ./spec/features/user_sees_weekdays_spec.rb:54:in `block (3 levels) in <top (required)>'
+
+  22) User sees weekdays and menu menu created First course
+      Failure/Error: #     expect(page).to have_content "First course dishes"
+        expected to find text "First course dishes" in "Home Logged in as John, user@example.com. My orders | Edit profile | Logout Welcome! You have signed up successfully. «August 2015»MonTueWedThuFriSatSun 2015-08-03 menu 2015-08-04 menu 2015-08-05 menu 2015-08-06 menu 2015-08-07 menu 2015-08-08 menu 2015-08-09 menu 2015-08-10 menu 2015-08-11 menu 2015-08-12 menu 2015-08-13 menu 2015-08-14 menu 2015-08-15 menu 2015-08-16 menu Yay! No menu for today yet!"
+      # ./spec/features/user_sees_weekdays_spec.rb:57:in `block (3 levels) in <top (required)>'
+
+  23) User sees weekdays and menu menu created First course
+      Failure/Error: #     expect(page).to have_content "First course dishes"
+        expected to find text "First course dishes" in "Home Logged in as John, user@example.com. My orders | Edit profile | Logout Welcome! You have signed up successfully. «August 2015»MonTueWedThuFriSatSun 2015-08-03 menu 2015-08-04 menu 2015-08-05 menu 2015-08-06 menu 2015-08-07 menu 2015-08-08 menu 2015-08-09 menu 2015-08-10 menu 2015-08-11 menu 2015-08-12 menu 2015-08-13 menu 2015-08-14 menu 2015-08-15 menu 2015-08-16 menu Yay! No menu for today yet!"
+      # ./spec/features/user_sees_weekdays_spec.rb:63:in `block (3 levels) in <top (required)>'
+
+  24) User sees weekdays and menu menu created submit
+      Failure/Error: #     expect(page).to have_button "Process order"
+        expected to find button "Process order" but there were no matches
+      # ./spec/features/user_sees_weekdays_spec.rb:68:in `block (3 levels) in <top (required)>'
+
+  25) Dishes GET /dishes works! (now write some real specs)
+      Failure/Error: get dishes_path
+      NameError:
+        undefined local variable or method `dishes_path' for #<RSpec::ExampleGroups::Dishes::GETDishes:0x0000000a7b9bc0>
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/assertions/routing.rb:171:in `method_missing'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:397:in `method_missing'
+      # ./spec/requests/dishes_spec.rb:6:in `block (3 levels) in <top (required)>'
+
+  26) Drinks GET /drinks works! (now write some real specs)
+      Failure/Error: get drinks_path
+      NameError:
+        undefined local variable or method `drinks_path' for #<RSpec::ExampleGroups::Drinks::GETDrinks:0x0000000b5b0878>
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/assertions/routing.rb:171:in `method_missing'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:397:in `method_missing'
+      # ./spec/requests/drinks_spec.rb:6:in `block (3 levels) in <top (required)>'
+
+  27) FirstCourseDishes GET /first_course_dishes works! (now write some real specs)
+      Failure/Error: get first_course_dishes_path
+      NameError:
+        undefined local variable or method `first_course_dishes_path' for #<RSpec::ExampleGroups::FirstCourseDishes::GETFirstCourseDishes:0x00000009bfc5d0>
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/assertions/routing.rb:171:in `method_missing'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:397:in `method_missing'
+      # ./spec/requests/first_course_dishes_spec.rb:6:in `block (3 levels) in <top (required)>'
+
+  28) Menus GET /menus works! (now write some real specs)
+      Failure/Error: get menus_path
+      ActionController::RoutingError:
+        No route matches [GET] "/menus"
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `block in call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:26:in `tagged'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `tagged'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/static.rb:116:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/rack-test-0.6.3/lib/rack/test.rb:124:in `request'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:297:in `process'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:32:in `get'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:344:in `block (2 levels) in <module:Runner>'
+      # ./spec/requests/menus_spec.rb:6:in `block (3 levels) in <top (required)>'
+
+  29) Orders GET /orders works! (now write some real specs)
+      Failure/Error: expect(response).to have_http_status(200)
+        expected the response to have status code 200 but it was 302
+      # ./spec/requests/orders_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+  30) SecondCourseDishes GET /second_course_dishes works! (now write some real specs)
+      Failure/Error: get second_course_dishes_path
+      NameError:
+        undefined local variable or method `second_course_dishes_path' for #<RSpec::ExampleGroups::SecondCourseDishes::GETSecondCourseDishes:0x00000009292aa8>
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/assertions/routing.rb:171:in `method_missing'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:397:in `method_missing'
+      # ./spec/requests/second_course_dishes_spec.rb:6:in `block (3 levels) in <top (required)>'
+
+  31) Users GET /users works! (now write some real specs)
+      Failure/Error: get users_path
+      NameError:
+        undefined local variable or method `users_path' for #<RSpec::ExampleGroups::Users::GETUsers:0x00000009e7e330>
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/assertions/routing.rb:171:in `method_missing'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/testing/integration.rb:397:in `method_missing'
+      # ./spec/requests/users_spec.rb:6:in `block (3 levels) in <top (required)>'
+
+  32) MenusController routing routes to #index
+      Failure/Error: expect(:get => "/menus").to route_to("menus#index")
+        No route matches "/menus"
+      # ./spec/routing/menus_routing_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+  33) MenusController routing routes to #new
+      Failure/Error: expect(:get => "/menus/new").to route_to("menus#new")
+        No route matches "/menus/new"
+      # ./spec/routing/menus_routing_spec.rb:11:in `block (3 levels) in <top (required)>'
+
+  34) MenusController routing routes to #show
+      Failure/Error: expect(:get => "/menus/1").to route_to("menus#show", :id => "1")
+        No route matches "/menus/1"
+      # ./spec/routing/menus_routing_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  35) MenusController routing routes to #edit
+      Failure/Error: expect(:get => "/menus/1/edit").to route_to("menus#edit", :id => "1")
+        No route matches "/menus/1/edit"
+      # ./spec/routing/menus_routing_spec.rb:19:in `block (3 levels) in <top (required)>'
+
+  36) MenusController routing routes to #update via PUT
+      Failure/Error: expect(:put => "/menus/1").to route_to("menus#update", :id => "1")
+        No route matches "/menus/1"
+      # ./spec/routing/menus_routing_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  37) MenusController routing routes to #update via PATCH
+      Failure/Error: expect(:patch => "/menus/1").to route_to("menus#update", :id => "1")
+        No route matches "/menus/1"
+      # ./spec/routing/menus_routing_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+  38) MenusController routing routes to #destroy
+      Failure/Error: expect(:delete => "/menus/1").to route_to("menus#destroy", :id => "1")
+        No route matches "/menus/1"
+      # ./spec/routing/menus_routing_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  39) OrdersController routing routes to #new
+      Failure/Error: expect(:get => "/orders/new").to route_to("orders#new")
+        The recognized options <{"controller"=>"orders", "action"=>"show", "id"=>"new"}> did not match <{"controller"=>"orders", "action"=>"new"}>, difference:.
+        --- expected
+        +++ actual
+        @@ -1 +1 @@
+        -{"controller"=>"orders", "action"=>"new"}
+        +{"controller"=>"orders", "action"=>"show", "id"=>"new"}
+      # ./spec/routing/orders_routing_spec.rb:11:in `block (3 levels) in <top (required)>'
+
+  40) OrdersController routing routes to #edit
+      Failure/Error: expect(:get => "/orders/1/edit").to route_to("orders#edit", :id => "1")
+        No route matches "/orders/1/edit"
+      # ./spec/routing/orders_routing_spec.rb:19:in `block (3 levels) in <top (required)>'
+
+  41) OrdersController routing routes to #update via PUT
+      Failure/Error: expect(:put => "/orders/1").to route_to("orders#update", :id => "1")
+        No route matches "/orders/1"
+      # ./spec/routing/orders_routing_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  42) OrdersController routing routes to #update via PATCH
+      Failure/Error: expect(:patch => "/orders/1").to route_to("orders#update", :id => "1")
+        No route matches "/orders/1"
+      # ./spec/routing/orders_routing_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+  43) OrdersController routing routes to #destroy
+      Failure/Error: expect(:delete => "/orders/1").to route_to("orders#destroy", :id => "1")
+        No route matches "/orders/1"
+      # ./spec/routing/orders_routing_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  44) dishes/edit renders the edit dish form
+      Failure/Error: @dish = assign(:dish, Dish.create!())
+      ActiveRecord::RecordInvalid:
+        Validation failed: Name can't be blank, Price can't be blank, Price is not a number, Quantity can't be blank, Quantity is not a number
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/validations.rb:79:in `raise_record_invalid'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/validations.rb:43:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_methods/dirty.rb:29:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:291:in `block in save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:220:in `transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:291:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:51:in `create!'
+      # ./spec/views/dishes/edit.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  45) dishes/index renders a list of dishes
+      Failure/Error: Dish.create!(),
+      ActiveRecord::RecordInvalid:
+        Validation failed: Name can't be blank, Price can't be blank, Price is not a number, Quantity can't be blank, Quantity is not a number
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/validations.rb:79:in `raise_record_invalid'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/validations.rb:43:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_methods/dirty.rb:29:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:291:in `block in save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:220:in `transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:291:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:51:in `create!'
+      # ./spec/views/dishes/index.html.haml_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  46) dishes/new renders new dish form
+      Failure/Error: render
+      ActionView::Template::Error:
+        undefined method `dishes_path' for #<#<Class:0x000000091325f0>:0x00000009eb8990>
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/polymorphic_routes.rb:220:in `polymorphic_method'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/routing/polymorphic_routes.rb:134:in `polymorphic_path'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/helpers/form_helper.rb:466:in `apply_form_for_options!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/helpers/form_helper.rb:434:in `form_for'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/haml-4.0.7/lib/haml/helpers/action_view_mods.rb:139:in `form_for_with_haml'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/haml-4.0.7/lib/haml/helpers/action_view_xss_mods.rb:28:in `form_for_with_haml_xss'
+      # ./app/views/dishes/_form.html.haml:1:in `_app_views_dishes__form_html_haml__3249299140435262479_75682180'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/template.rb:145:in `block in render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/template.rb:333:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/template.rb:143:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/partial_renderer.rb:309:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/helpers/rendering_helper.rb:35:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/haml-4.0.7/lib/haml/helpers/action_view_mods.rb:10:in `block in render_with_haml'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/haml-4.0.7/lib/haml/helpers.rb:89:in `non_haml'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/haml-4.0.7/lib/haml/helpers/action_view_mods.rb:10:in `render_with_haml'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/test_case.rb:199:in `render'
+      # ./app/views/dishes/new.html.haml:3:in `_app_views_dishes_new_html_haml___465976325753272240_81143820'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/template.rb:145:in `block in render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/template.rb:333:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/template.rb:143:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/template_renderer.rb:14:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/renderer.rb:42:in `render_template'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/renderer/renderer.rb:23:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/haml-4.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render_with_haml'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/test_case.rb:199:in `render'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.3/lib/action_view/test_case.rb:120:in `render'
+      # ./spec/views/dishes/new.html.haml_spec.rb:9:in `block (2 levels) in <top (required)>'
+
+  47) dishes/show renders attributes in <p>
+      Failure/Error: @dish = assign(:dish, Dish.create!())
+      ActiveRecord::RecordInvalid:
+        Validation failed: Name can't be blank, Price can't be blank, Price is not a number, Quantity can't be blank, Quantity is not a number
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/validations.rb:79:in `raise_record_invalid'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/validations.rb:43:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_methods/dirty.rb:29:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:291:in `block in save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:351:in `block in with_transaction_returning_status'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:220:in `transaction'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/transactions.rb:291:in `save!'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:51:in `create!'
+      # ./spec/views/dishes/show.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  48) menus/edit renders the edit menu form
+      Failure/Error: @menu = assign(:menu, Menu.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'first_course_dish_id' for Menu.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/menus/edit.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  49) menus/index renders a list of menus
+      Failure/Error: Menu.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'first_course_dish_id' for Menu.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/menus/index.html.haml_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  50) menus/new renders new menu form
+      Failure/Error: assign(:menu, Menu.new(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'first_course_dish_id' for Menu.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # ./spec/views/menus/new.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  51) menus/show renders attributes in <p>
+      Failure/Error: @menu = assign(:menu, Menu.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'first_course_dish_id' for Menu.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/menus/show.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  52) orders/edit renders the edit order form
+      Failure/Error: @order = assign(:order, Order.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'dish_id' for Order.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/orders/edit.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  53) orders/index renders a list of orders
+      Failure/Error: Order.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'dish_id' for Order.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/orders/index.html.haml_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  54) orders/new renders new order form
+      Failure/Error: assign(:order, Order.new(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'dish_id' for Order.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # ./spec/views/orders/new.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  55) orders/show renders attributes in <p>
+      Failure/Error: @order = assign(:order, Order.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'dish_id' for Order.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/orders/show.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  56) users/edit renders the edit user form
+      Failure/Error: @user = assign(:user, User.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'order_id' for User.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/users/edit.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  57) users/index renders a list of users
+      Failure/Error: User.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'order_id' for User.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/users/index.html.haml_spec.rb:6:in `block (2 levels) in <top (required)>'
+
+  58) users/new renders new user form
+      Failure/Error: assign(:user, User.new(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'order_id' for User.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # ./spec/views/users/new.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+  59) users/show renders attributes in <p>
+      Failure/Error: @user = assign(:user, User.create!(
+      ActiveRecord::UnknownAttributeError:
+        unknown attribute 'order_id' for User.
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `each'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+      # /home/korich/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.3/lib/active_record/persistence.rb:50:in `create!'
+      # ./spec/views/users/show.html.haml_spec.rb:5:in `block (2 levels) in <top (required)>'
+
+1 deprecation warning total
+
+Finished in 23.15 seconds (files took 7.5 seconds to load)
+222 examples, 59 failures, 46 pending
+
+Failed examples:
+
+rspec ./spec/controllers/admin/dashboard_controller_spec.rb:6 # Admin::DashboardController GET #index returns http success
+rspec ./spec/controllers/admin/dishes_controller_spec.rb:13 # Admin::DishesController GET #show returns http success
+rspec ./spec/controllers/admin/dishes_controller_spec.rb:20 # Admin::DishesController GET #update returns http success
+rspec ./spec/controllers/admin/dishes_controller_spec.rb:27 # Admin::DishesController GET #destroy returns http success
+rspec ./spec/controllers/admin/menus_controller_spec.rb:6 # Admin::MenusController GET #index returns http success
+rspec ./spec/controllers/admin/menus_controller_spec.rb:13 # Admin::MenusController GET #show returns http success
+rspec ./spec/controllers/admin/menus_controller_spec.rb:20 # Admin::MenusController GET #create returns http success
+rspec ./spec/controllers/admin/menus_controller_spec.rb:27 # Admin::MenusController GET #destroy returns http success
+rspec ./spec/controllers/admin/orders_controller_spec.rb:6 # Admin::OrdersController GET #index returns http success
+rspec ./spec/controllers/admin/orders_controller_spec.rb:13 # Admin::OrdersController GET #show returns http success
+rspec ./spec/controllers/admin/orders_controller_spec.rb:20 # Admin::OrdersController GET #update returns http success
+rspec ./spec/controllers/admin/orders_controller_spec.rb:27 # Admin::OrdersController GET #destroy returns http success
+rspec ./spec/controllers/admin/users_controller_spec.rb:13 # Admin::UsersController GET #show returns http success
+rspec ./spec/controllers/admin/users_controller_spec.rb:20 # Admin::UsersController GET #update returns http success
+rspec ./spec/controllers/admin/users_controller_spec.rb:27 # Admin::UsersController GET #destroy returns http success
+rspec ./spec/controllers/menus_controller_spec.rb:56 # MenusController GET #new assigns a new menu as @menu
+rspec ./spec/controllers/orders_controller_spec.rb:37 # OrdersController POST #create with valid params creates a new Order
+rspec ./spec/controllers/orders_controller_spec.rb:43 # OrdersController POST #create with valid params assigns a newly created order as @order
+rspec ./spec/controllers/orders_controller_spec.rb:49 # OrdersController POST #create with valid params redirects to the created order
+rspec ./spec/controllers/orders_controller_spec.rb:55 # OrdersController POST #create with unvalid params re-renders the 'new' template
+rspec ./spec/features/user_sees_weekdays_spec.rb:53 # User sees weekdays and menu menu created message
+rspec ./spec/features/user_sees_weekdays_spec.rb:56 # User sees weekdays and menu menu created First course
+rspec ./spec/features/user_sees_weekdays_spec.rb:62 # User sees weekdays and menu menu created First course
+rspec ./spec/features/user_sees_weekdays_spec.rb:67 # User sees weekdays and menu menu created submit
+rspec ./spec/requests/dishes_spec.rb:5 # Dishes GET /dishes works! (now write some real specs)
+rspec ./spec/requests/drinks_spec.rb:5 # Drinks GET /drinks works! (now write some real specs)
+rspec ./spec/requests/first_course_dishes_spec.rb:5 # FirstCourseDishes GET /first_course_dishes works! (now write some real specs)
+rspec ./spec/requests/menus_spec.rb:5 # Menus GET /menus works! (now write some real specs)
+rspec ./spec/requests/orders_spec.rb:5 # Orders GET /orders works! (now write some real specs)
+rspec ./spec/requests/second_course_dishes_spec.rb:5 # SecondCourseDishes GET /second_course_dishes works! (now write some real specs)
+rspec ./spec/requests/users_spec.rb:5 # Users GET /users works! (now write some real specs)
+rspec ./spec/routing/menus_routing_spec.rb:6 # MenusController routing routes to #index
+rspec ./spec/routing/menus_routing_spec.rb:10 # MenusController routing routes to #new
+rspec ./spec/routing/menus_routing_spec.rb:14 # MenusController routing routes to #show
+rspec ./spec/routing/menus_routing_spec.rb:18 # MenusController routing routes to #edit
+rspec ./spec/routing/menus_routing_spec.rb:26 # MenusController routing routes to #update via PUT
+rspec ./spec/routing/menus_routing_spec.rb:30 # MenusController routing routes to #update via PATCH
+rspec ./spec/routing/menus_routing_spec.rb:34 # MenusController routing routes to #destroy
+rspec ./spec/routing/orders_routing_spec.rb:10 # OrdersController routing routes to #new
+rspec ./spec/routing/orders_routing_spec.rb:18 # OrdersController routing routes to #edit
+rspec ./spec/routing/orders_routing_spec.rb:26 # OrdersController routing routes to #update via PUT
+rspec ./spec/routing/orders_routing_spec.rb:30 # OrdersController routing routes to #update via PATCH
+rspec ./spec/routing/orders_routing_spec.rb:34 # OrdersController routing routes to #destroy
+rspec ./spec/views/dishes/edit.html.haml_spec.rb:8 # dishes/edit renders the edit dish form
+rspec ./spec/views/dishes/index.html.haml_spec.rb:11 # dishes/index renders a list of dishes
+rspec ./spec/views/dishes/new.html.haml_spec.rb:8 # dishes/new renders new dish form
+rspec ./spec/views/dishes/show.html.haml_spec.rb:8 # dishes/show renders attributes in <p>
+rspec ./spec/views/menus/edit.html.haml_spec.rb:13 # menus/edit renders the edit menu form
+rspec ./spec/views/menus/index.html.haml_spec.rb:21 # menus/index renders a list of menus
+rspec ./spec/views/menus/new.html.haml_spec.rb:13 # menus/new renders new menu form
+rspec ./spec/views/menus/show.html.haml_spec.rb:13 # menus/show renders attributes in <p>
+rspec ./spec/views/orders/edit.html.haml_spec.rb:12 # orders/edit renders the edit order form
+rspec ./spec/views/orders/index.html.haml_spec.rb:19 # orders/index renders a list of orders
+rspec ./spec/views/orders/new.html.haml_spec.rb:12 # orders/new renders new order form
+rspec ./spec/views/orders/show.html.haml_spec.rb:12 # orders/show renders attributes in <p>
+rspec ./spec/views/users/edit.html.haml_spec.rb:12 # users/edit renders the edit user form
+rspec ./spec/views/users/index.html.haml_spec.rb:19 # users/index renders a list of users
+rspec ./spec/views/users/new.html.haml_spec.rb:12 # users/new renders new user form
+rspec ./spec/views/users/show.html.haml_spec.rb:12 # users/show renders attributes in <p>
+
+Coverage report generated for RSpec to /home/korich/Desktop/muffinApp/coverage. 1028 / 1308 LOC (78.59%) covered.

@@ -48,7 +48,7 @@ feature "login/logup" do
         fill_in 'Password confirmation', with: 'password'
       end
       click_button 'Sign up'
-      expect(page).to have_link 'Admin page', href:'/rails_admin/'
+      expect(page).to have_link 'Rails admin', href:'/rails_admin/'
       
       click_link 'Logout'
       user
