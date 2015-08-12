@@ -9,8 +9,8 @@
       %th Second course
       %th Drink
       %th Total price
-      %th Id
-      %th
+      %th 
+    
 
   %tbody
     -if @orders
@@ -22,13 +22,13 @@
           %td= order.drink.name
           %td= order.total_price.round(2)
           %td= link_to 'Show', controller: "admin/orders", action: :show, date:"222", id:order.id, type: "one"
-          %td= order.id
+          
 
 %br
 %br
 %div 
   Total price for day: 
-   =@orders.inject(0) {|s, o| s+o.total_price}.round(2)
+  =@orders.inject(0) {|s, o| s+o.total_price}.round(2)
 
 
   
