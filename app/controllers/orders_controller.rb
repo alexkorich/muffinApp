@@ -28,7 +28,6 @@ class OrdersController < ApplicationController
       @order = Order.new(order_params)
       @order.date=Date.today
       @order.user_id=current_user.id
-
       @order.first_course_dish=FirstCourseDish.find(params[:order][:first_course_dish_ids]) if params[:order][:first_course_dish_ids]
       @order.second_course_dish=SecondCourseDish.find(params[:order][:second_course_dish_ids]) if params[:order][:second_course_dish_ids]
       @order.drink=Drink.find(params[:order][:drink_ids]) if params[:order][:drink_ids]

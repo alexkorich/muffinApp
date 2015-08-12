@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   end
  
   get 'menus/find_by_date' => 'menus#find_by_date'
-  resources :orders, only: [:create, :create_from_menu, :read, :show]
+  resources :orders, only: [:index, :create, :create_from_menu, :read, :show]
   resources :menus, only: [:create, :read, :find_by_date]
 
   root "menus#index"
