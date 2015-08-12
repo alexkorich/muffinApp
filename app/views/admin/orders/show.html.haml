@@ -5,14 +5,17 @@
   = @order.date
 %ul
   %li Dish1:
-  = @order.first_course_dish.name
-  = @order.first_course_dish.price
+  -if @order.first_course_dish
+    = @order.first_course_dish.name
+    = @order.first_course_dish.price
   %li Dish2:
-  = @order.second_course_dish.name
-  = @order.second_course_dish.price
+  -if @order.second_course_dish
+    = @order.second_course_dish.name
+    = @order.second_course_dish.price
   %li Drink:
-  = @order.drink.name
-  = @order.drink.price
+  -if @order.drink
+    = @order.drink.name
+    = @order.drink.price
 %p
   %b User:
   = @order.user.name

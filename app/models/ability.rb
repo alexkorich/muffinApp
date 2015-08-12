@@ -8,16 +8,23 @@ class Ability
       if user.role==="admin"
         can :access, :rails_admin   # grant access to rails_admin
         can :dashboard 
-        can :manage, :all
-        can :access
-      elsif user.role==="customer"
-
-        # can :read, :all
+        # can :create, Menu, date:Date.today
         can :read, Menu
-        can :read, Order
-        can :create, Order
-        can :create_from_menu, Order
+        can :delete, Menu
+        can :update, Menu
+        can :manage, Dish
+        can :manage, Order
+        can :manage, User
+        can :manage, :all
+        
+      elsif user.role==="customer"
+        can :read, Menu
         can :find_by_date, Menu
+        can :create_from_menu, Order
+        can :read, Order, user_id: user.id
+        can :create, Order
+      else
+
       end
     
              # grant access to the dashboard
