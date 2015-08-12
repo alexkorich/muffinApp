@@ -6,7 +6,7 @@ class Dish < ActiveRecord::Base
   # ==   if user will be able to order >1 dishes and drink use this: ==
   # has_and_belongs_to_many :orders, association_foreign_key: 'order_id', join_table: 'dishes_orders'  
 
-  has_many :orders
+  
   validates :name, :price, :quantity, presence: true
   validates :name, uniqueness: true
   validates :price, :numericality => { greater_than: 0 }
