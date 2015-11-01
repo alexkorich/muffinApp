@@ -1,0 +1,73 @@
+= week_calendar class:"table-striped", start_date: 1.weeks.ago, number_of_weeks: 2 do |date|
+  =date 
+  %br
+  = link_to "menu",  controller: "menus", action: "find_by_date",  date: date 
+-if @menu
+  %p
+    %b
+    Today is
+    = @menu.date 
+
+  Menu for today: 
+  = simple_form_for @menu, name:"order", url: url_for(action: 'create', controller: 'orders'), method: 'post' do |f| 
+    = f.association :first_course_dishes, as: "first_course_dish", label_method: lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons 
+    = f.association :second_course_dishes, label_method: lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons 
+    = f.association :drinks, label_method: lambda { |d| "#{d.name} | #{d.price}" }, as: :radio_buttons 
+    = f.submit "Process order" 
+
+
+-else 
+  %br
+  %br
+  Yay! No menu for today yet!
+%br  
+
+=(2.weeks.ago.to_date..7.days.from_now).each do |day| 
+  %table
+    %thead
+      %tr
+        %td Sunday
+        %td Mon
+        %td Tue
+        %td Wen
+        %td Thu
+        %td Fri
+        %td Sat
+
+    %tbody
+      %tr
+        %td
+          -if day.wday==0
+            =day.name_of_week_day   
+          -else
+            "lil"
+        %td
+          -if day.wday==1
+            =day.name_of_week_day   
+          -else
+            "lil"  
+        %td
+          -if day.wday==2
+            =day.name_of_week_day   
+          -else
+            "lil"  
+        %td
+          -if day.wday==3
+            =day.name_of_week_day   
+          -else
+            "lil"          
+        %td
+          -if day.wday==4
+            =day.name_of_week_day   
+          -else
+            "lil"          
+        %td
+          -if day.wday==5
+            =day.name_of_week_day   
+          -else
+            "lil"  
+        %td
+          -if day.wday==5
+            =day.name_of_week_day   
+          -else
+            "lil"  
