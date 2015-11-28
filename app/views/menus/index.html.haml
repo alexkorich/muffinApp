@@ -2,8 +2,7 @@
 = week_calendar  class:"table-striped", events: @menus, start_date: 1.weeks.ago, number_of_weeks: 2 do |date, menus|
   =date.mday
   -menus.each do |menu|
-    =menu.date
-    = link_to "#{date.mday}",  controller: "menus", action: "find_by_date",  date: date
+    = link_to "Show menu",  controller: "menus", action: "find_by_date",  date: date
 -if @menu
   %p
     %b

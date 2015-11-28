@@ -34,6 +34,10 @@ gem 'coffee-script-source'
 gem "rails_admin"
 gem 'simple_form'
 gem "simple_calendar", "~> 2.0"
+
+gem 'carrierwave'
+gem 'kaminari'
+gem 'mini_magick'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

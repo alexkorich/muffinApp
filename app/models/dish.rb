@@ -16,4 +16,6 @@ class Dish < ActiveRecord::Base
   scope :first_course_dishes, -> { where(type: 'FirstCourseDish') } 
   scope :drinks, -> { where(type: 'Drink') } 
   scope :second_course_dishes, -> { where(type: 'SecondCourseDish') }
+
+  mount_uploader :avatar, AvatarUploader
 end
