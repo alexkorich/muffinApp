@@ -231,7 +231,7 @@ GEM
     sexp_processor (4.6.0)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
-    simple_calendar (1.1.10)
+    simple_calendar (2.0.3)
       rails (>= 3.0)
     simple_form (3.1.0)
       actionpack (~> 4.0)
@@ -298,7 +298,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   selenium-webdriver
   shoulda-matchers
-  simple_calendar (~> 1.1.0)
+  simple_calendar (~> 2.0)
   simple_form
   simplecov
   spring

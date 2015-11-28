@@ -7,4 +7,5 @@ class Menu < ActiveRecord::Base
 
   validates :drinks, :first_course_dishes, :second_course_dishes, :date, presence: true
   validates :date, uniqueness:true
+  validates :start_time, presence: true
 end

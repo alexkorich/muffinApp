@@ -5,6 +5,7 @@ class MenusController < ApplicationController
   # GET /menus.json
   def index
     @menu = Menu.find_by(date:Date.today)
+    @menus =Menu.all
   end
 
   # GET /menus/1
@@ -76,6 +77,7 @@ class MenusController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def menu_params
-      params.require(:menu).permit(:date, :first_course_dish_id, :second_course_id, :drink_id, :order_id)
+      params.menu[:start_time]=DateTime.now
+      params.require(:menu).permit(:date, start_time, :first_course_dish_id, :second_course_id, :drink_id, :order_id)
     end
 end
