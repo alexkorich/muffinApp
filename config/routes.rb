@@ -15,9 +15,9 @@ Rails.application.routes.draw do
   end
  
   get 'menus/find_by_date' => 'menus#find_by_date'
-    resources :first_course_dishes
-     resources :second_course_dishes
-     resources :drinks
+    resources :first_course_dishes, controller: "dishes", type: "FirstCourseDish"
+     resources :second_course_dishes, controller: "dishes", type: "SecondCourseDish"
+     resources :drinks, controller: "dishes", type: "Drink"
     resources :dishes
     resources :orders 
     resources :users

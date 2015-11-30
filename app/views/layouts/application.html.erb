@@ -9,7 +9,10 @@
 </head>
 <body>
   <div id="user-nav" class='navbar navbar-warning'>
-  <%= link_to "Home", root_path, class: "navbar-brand"%>
+   <ul class="nav navbar-nav navbar-left">
+  
+  <li><%= link_to "Home", root_path, class: "navbar-brand"%></li>
+  </ul>
     <% if user_signed_in? %>
       <span>
         Logged in as <strong><%= current_user.name%></strong><strong>, <%=current_user.email %></strong>

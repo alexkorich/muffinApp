@@ -1,26 +1,22 @@
 %h3
   This is menu for 
   =@menu.date
-%table.table-bordered
-  %thead
-    %tr
-      %th First course dishes
-      %th Second course dishes
-      %th Drinks
-  %tbody
-    %tr
-      %td 
-        -@menu.first_course_dishes.each do |d|
-          =d.name
-          =d.price
-          %br
-      %td 
-        -@menu.second_course_dishes.each do |d|
-          =d.name
-          =d.price
-          %br
-      %td 
-        -@menu.drinks.each do |d|
-          =d.name
-          =d.price
-          %br
+.row
+  .col-md-4
+    %h3 First course dishes
+    -@menu.first_course_dishes.each do |d|
+      =link_to d.name, d
+      =d.price
+      %br
+  .col-md-4  
+    %h3 Second course dishes
+    -@menu.second_course_dishes.each do |d|
+      =link_to d.name, d
+      =d.price
+      %br
+  .col-md-4  
+    %h3 Drinks 
+    -@menu.drinks.each do |d|
+      =link_to d.name, d
+      =d.price
+      %br
