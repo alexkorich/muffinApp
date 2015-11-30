@@ -2,13 +2,13 @@
 <html>
 <head>
   <title>Admin page</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all"%>
+  <%= javascript_include_tag "application" %>
    <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="user-nav"; class='navbar navbar-default'>
+  <div id="user-nav"; class='navbar navbar-warning'>
   <%= link_to "Home", root_path%> |
   <%= link_to "Admin", admin_path  %> |
   <%= link_to "Rails admin", rails_admin_path  %> |
