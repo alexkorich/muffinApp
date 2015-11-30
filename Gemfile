@@ -29,7 +29,6 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'cancancan', '~> 1.10'
 gem "haml-rails", "~> 0.9"
-gem 'carrierwave'
 gem 'coffee-script-source'
 gem "rails_admin"
 gem 'simple_form'
@@ -38,6 +37,11 @@ gem "simple_calendar", "~> 2.0"
 gem 'carrierwave'
 gem 'kaminari'
 gem 'mini_magick'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap-material-design', '~> 0.2.1'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
