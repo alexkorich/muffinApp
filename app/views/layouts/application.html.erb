@@ -9,19 +9,29 @@
 </head>
 <body>
   <div id="user-nav" class='navbar navbar-warning'>
-  <%= link_to "Home", root_path%>
+  <%= link_to "Home", root_path, class: "navbar-brand"%>
     <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.name%></strong><strong>, <%=current_user.email %></strong>.
+      <span>
+        Logged in as <strong><%= current_user.name%></strong><strong>, <%=current_user.email %></strong>
+      </span>
+      
       <% if current_user.role==="admin" %>
-        <%= link_to("Admin page", '/admin') %> |
-        <%= link_to("Rails admin page", rails_admin.dashboard_path) %> |
+        <%= link_to "Admin page", '/admin',class: "navbar-brand" %>
+        <%= link_to "Rails admin page", rails_admin.dashboard_path, class: "navbar-brand" %>
       <% end %>
-      <%= link_to 'My orders', orders_path %> |
-      <%= link_to 'Edit profile', edit_user_registration_path %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :get %>
+      <%= link_to 'My orders', orders_path , class: "navbar-brand"%>
+      <ul class="nav navbar-nav navbar-right">
+      <li>  
+        <%= link_to 'Edit profile', edit_user_registration_path , class: "navbar-brand"%> </li>
+       <li> 
+        <%= link_to "Logout", destroy_user_session_path, method: :get, class: "navbar-brand" %> </li>
+      </ul>
+      
     <% else %>
-      <%= link_to "Sign up", new_user_registration_path %> |
-      <%= link_to "Login", new_user_session_path %>
+          <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Sign up", new_user_registration_path, class: "navbar-brand" %></li>
+      <li><%= link_to "Login", new_user_session_path, class: "navbar-brand" %></li>
+        </ul>
     <% end %>
   </div>
 
