@@ -1,0 +1,15 @@
+.container
+  .h2.text-center
+    Sign up
+  .form-group  
+    = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), wrapper: :horizontal_form) do |f|
+      = f.error_notification
+      .form-inputs
+        = f.input :email, required: false, autofocus: true
+        = f.input :name, required: false
+        = f.input :password, required: false, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
+        = f.input :password_confirmation, required: false
+      .form-actions
+        = f.button :submit, "Sign up", class: "btn-warning"
+  .text-center
+    = render "devise/shared/links"
