@@ -1,22 +1,35 @@
-%h3
-  This is menu for 
-  =@menu.date
-.row
-  .col-md-4
-    %h3 First course dishes
-    -@menu.first_course_dishes.each do |d|
-      =link_to d.name, d
-      =d.price
-      %br
-  .col-md-4  
-    %h3 Second course dishes
-    -@menu.second_course_dishes.each do |d|
-      =link_to d.name, d
-      =d.price
-      %br
-  .col-md-4  
-    %h3 Drinks 
-    -@menu.drinks.each do |d|
-      =link_to d.name, d
-      =d.price
-      %br
+.container-fluid
+  %h3
+    This is menu for 
+    =@menu.date  
+  .row
+    .col-md-4
+      %h3.text-center
+        First course dishes
+      -@menu.first_course_dishes.each do |d|
+        .col-md-8
+          =link_to d.name, d
+        .col-md-4
+          $
+          =d.price
+        %br
+    .col-md-4
+      %h3.text-center 
+        Second course dishes
+      -@menu.second_course_dishes.each do |d|
+        .col-md-8
+          =link_to d.name, d
+        .col-md-4
+          $
+          =d.price
+        %br
+    .col-md-4
+      %h3.text-center 
+        Drinks
+      -@menu.drinks.each do |d|
+        .col-md-8
+          =link_to d.name, d
+        .col-md-4
+          $
+          =d.price
+        %br
