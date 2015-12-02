@@ -1,44 +1,33 @@
 -if @menu
   %div 
     %h2 Menu for today:
-    %div 
+    .col-md-4
       %h3 First course:
-      %table.table-bordered
-        %thead
-          %tr
-            %th Name
-            %th Price
-        %tbody
-          - @menu.first_course_dishes.each do |d|
-            %tr
-              %td= d.name
-              %td= d.price
+      - @menu.first_course_dishes.each do |d|
+        .col-md-8
+          = link_to d.name, d
+        .col-md-4 
+          $
+          = d.price
+    .col-md-4      
       %h3 Second course:
-      %table.table-bordered
-        %thead
-          %tr
-            %th Name
-            %th Price
-        %tbody
-          - @menu.second_course_dishes.each do |d|
-            %tr
-              %td= d.name
-              %td= d.price      
+      - @menu.second_course_dishes.each do |d|
+        .col-md-8
+          = link_to d.name, d
+        .col-md-4
+          $  
+          = d.price
+    .col-md-4      
       %h3 Drinks:
-      %table.table-bordered
-        %thead
-          %tr
-            %th Name
-            %th Price
-        %tbody
-          - @menu.drinks.each do |d|
-            %tr
-              %td= d.name
-              %td= d.price
-
+      - @menu.drinks.each do |d|
+        .col-md-8
+          = link_to d.name, d
+        .col-md-4
+          $
+          = d.price
   -if @orders.exists?
     %h2 Todays orders:
-    %table.table-bordered
+    %table.table-bordered.table
       %thead
         %tr
           %th User
@@ -47,8 +36,6 @@
           %th Drink
           %th Total price
           %th
-          %th
-
       %tbody
         - @orders.each do |order|
           %tr
@@ -57,16 +44,17 @@
             %td= order.second_course_dish.name if order.second_course_dish
             %td= order.drink.name if order.drink
             %td= order.total_price.round(2)
-            %td= link_to 'Show', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
+            %td= link_to 'Go to order', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
     %br
-    %br
-      Total price for day: 
+    %h4
+      Total price for day:
+      $
       =@orders.inject(0) {|s, o| s+o.total_price}.round(2)
 
 
 
 -else
-  %h2 Menu for today isn't created yet!
+  %h3 Menu for today isn't created yet!
   %div 
     = simple_form_for :menu, :url => url_for(:action => 'create', :controller => 'admin/menus'), :method => 'post' do |menu|
       %h3

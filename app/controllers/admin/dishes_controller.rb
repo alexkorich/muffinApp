@@ -22,6 +22,6 @@ layout 'admin/layouts/application'
 
     def dish_params
       
-      params.require(:dish).permit(:name, :type, :quantity, :price)
+      params.require(:dish).permit(:name, :type, :quantity, :price, :avatar)
     end
 end

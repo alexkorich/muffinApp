@@ -1,23 +1,22 @@
 
-%table.table-bordered
+%table.table-bordered.table
   %thead
     %tr
       %th Name
       %th Type
       %th Price
-      %th
   %tbody
     - @dishes.each do |d|
       %tr
-        %td= d.name
+        %td=link_to d.name, d
         %td= d.type
-        %td= d.price
-        / %th =link_to 
+        %td= d.price 
 %br
 %div Create new dish:
-= simple_form_for :dish, :url => url_for(action: 'create', controller: 'admin/dishes'), :method => 'post' do |dish|
+= simple_form_for :dish, html: {multipart: true}, :url => url_for(action: 'create', controller: 'admin/dishes'), :method => 'post' do |dish|
   = dish.input :name, label: 'Dish name'
   = dish.input :type, collection: ["FirstCourseDish", "SecondCourseDish", "Drink"]
   = dish.input :quantity, as: :integer
   = dish.input :price, as: :float
-  = dish.submit "Create dish" 
+  = dish.input :avatar, as: :file
+  = dish.submit "Create dish", class: "btn-warning btn"

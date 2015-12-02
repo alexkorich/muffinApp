@@ -1,0 +1,34 @@
+.navbar.navbar-warning#user-nav
+  %ul.nav.navbar-nav.navbar-left
+    %li
+      = link_to "Home", root_path, class: "navbar-brand"
+  -if user_signed_in?
+    %ul.nav.navbar-nav.navbar-left      
+      %li 
+        = link_to "Admin", admin_path, class: "navbar-brand" 
+      %li
+        = link_to "Rails admin", rails_admin.dashboard_path, class: "navbar-brand"
+      %li
+        = link_to 'Orders', admin_orders_path  , class: "navbar-brand"
+      %li
+        = link_to 'Users', admin_users_path    , class: "navbar-brand"
+      %li
+        = link_to 'Dishes', admin_dishes_path  , class: "navbar-brand"
+    %ul.nav.navbar-nav.navbar-right
+      %li
+        %div.s{style:"height:16px;"}
+        %h4
+          Logged in as 
+          = current_user.name
+          ,
+          =current_user.email  
+      %li 
+        = link_to 'Edit profile', edit_user_registration_path , class: "navbar-brand"
+      %li 
+        = link_to "Logout", destroy_user_session_path, method: :get, class: "navbar-brand"
+  -else
+    %ul.nav.navbar-nav.navbar-right
+      %li
+        = link_to "Sign up", new_user_registration_path, class: "navbar-brand"
+      %li
+        = link_to "Login", new_user_session_path, class: "navbar-brand"    

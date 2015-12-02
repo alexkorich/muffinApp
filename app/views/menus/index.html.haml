@@ -18,8 +18,9 @@
       = f.association :second_course_dishes, required: false,  label_method: lambda { |d| link_to "#{d.name} | $#{d.price}", d  }, as: :radio_buttons
     .col-md-4
       = f.association :drinks, required: false, label_method: lambda { |d| link_to "#{d.name} | $#{d.price}", d  }, as: :radio_buttons
-    .text-center  
-      = f.submit "Process order", class:"btn btn-raised btn-warning"
+    -if user_signed_in?
+      .text-center.col-md-12
+        = f.submit "Process order", class:"btn btn-raised btn-warning"
 
 
 -else 
