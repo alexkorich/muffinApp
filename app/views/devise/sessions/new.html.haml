@@ -1,7 +1,8 @@
 %h2.text-center
   Log in
 %div.center-block.s{style:"width:200px"}  
-  = simple_form_for(resource, as: resource_name, url: session_path(resource_name), wrapper: "inline_form") do |f| 
+  = simple_form_for(resource, as: resource_name, url: session_path(resource_name), wrapper: :horizontal_form) do |f|
+    = f.error_notification
     .form-inputs
       = f.input :email, required: false, autofocus: true 
       = f.input :password, required: false 
