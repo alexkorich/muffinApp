@@ -1,5 +1,5 @@
 = week_calendar  class:"table-striped", events: @orders,start_date:1.weeks.ago, number_of_weeks: 2 do |date, orders|
   =date.mday
-  -orders.each do |menu|
+  -if !orders.empty?
     = link_to "Show orders",  controller: "orders", action: "find_by_date",  date: date
   %br

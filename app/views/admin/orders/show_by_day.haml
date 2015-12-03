@@ -15,10 +15,19 @@
     -if @orders
       - @orders.each do |order|
         %tr
-          %td= order.user.name 
-          %td= order.first_course_dish.name
-          %td= order.second_course_dish.name
-          %td= order.drink.name
+          %td= order.user.name
+          -if order.first_course_dish
+            %td= order.first_course_dish.name
+          -else
+            %td
+          -if order.second_course_dish
+            %td= order.second_course_dish.name
+          -else
+            %td
+          -if order.drink
+            %td= order.drink.name
+          -else
+            %td  
           %td= order.total_price.round(2)
           %td= link_to 'Show', controller: "admin/orders", action: :show, id:order.id, type: "one"
 - a=0
