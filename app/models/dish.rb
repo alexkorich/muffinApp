@@ -18,4 +18,7 @@ class Dish < ActiveRecord::Base
   scope :second_course_dishes, -> { where(type: 'SecondCourseDish') }
 
   mount_uploader :avatar, AvatarUploader
+  def view
+    self.name+" | "+"$"+self.price.to_s
+  end
 end

@@ -27,6 +27,7 @@ class OrdersController < ApplicationController
     if (params[:order])&&(params[:order][:first_course_dish_ids] || params[:order][:second_course_dish_ids] || params[:order][:drink_ids])
       @order = Order.new(order_params)
       @order.date=Date.today
+      @order.start_time=DateTime.now
       @order.user_id=current_user.id
       @order.first_course_dish=FirstCourseDish.find(params[:order][:first_course_dish_ids]) if params[:order][:first_course_dish_ids]
       @order.second_course_dish=SecondCourseDish.find(params[:order][:second_course_dish_ids]) if params[:order][:second_course_dish_ids]
@@ -39,12 +40,12 @@ class OrdersController < ApplicationController
             render :show, notice: 'Order was successfully created.', location: @order }
           format.json { render :show, status: :created, location: @order }
         else
-          format.html { redirect_to :back, notice: @order.errors }
+          format.html { redirect_to :back, error: @order.errors }
           format.json { render json: @order.errors, status: :unprocessable_entity }
         end
       end
     else
-     redirect_to :back, notice: 'You need at least one item!'
+     redirect_to :back, alert: 'You need at least one item!'
     end
   end
 

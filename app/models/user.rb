@@ -9,6 +9,10 @@ class User < ActiveRecord::Base
   has_many :orders
   before_create :first_admin
 
+
+  def has_orders?
+    Order.where(user_id:self.id).exists?
+  end
   private
   def first_admin
     if User.exists?

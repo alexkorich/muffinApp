@@ -1,28 +1,38 @@
-== README
+== Lunch ordering system
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project implements lunch ordering system.
 
-Things you may want to cover:
+Visitor (non-registered user)
 
-* Ruby version
+* Visitor can see calendar and menu for today with dishes and prices (if already created )
+* Visitor can browse calendar weeks and view menu for past days
+* Visitor can register and become a user
+* Visitor can select dish and read its description on dish page
 
-* System dependencies
+User
 
-* Configuration
+* User can edit his profile (change name, email, password)
+* User can see a weekdays on the dashboard page (calendar for 2 weeks)
+* When user clicks on the weekday(today or days in the past), he can see menu ­list 
+of items with prices. 
+* User can only choose one item from the first 
+course, one item from the main course and one drink. Total 3 items. 
+* User can press Process order button to process order. 
+* User can browse his orders by clicking My orders button
+* User can view each order in details
+* User can select dish and read its description on dish page
 
-* Database creation
+Admin
+* Admin can access admin's dashboard
+* Admin can browse registered users. 
+* Admin can browse existing dishes.
+* Admin can browse all orders list. 
+* Admin can browse calendar and see users’ orders for each day. 
+* Admin can add items in menu only for today by selecting dishes from 3 categories: first course, second course, drinks
+* Admin can add new dishes by entering name, category, description, quantity, price and picture (if needed)
+* On the dashboard page admin can see the menu for today, list of orders and total launch cost 
+for today.  
+ 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+DB: Postgres
+Frontend: Bootstrap, Bootstrap material design

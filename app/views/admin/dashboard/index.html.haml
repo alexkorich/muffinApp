@@ -26,52 +26,58 @@
           $
           = d.price
   -if @orders.exists?
-    %h2 Todays orders:
-    %table.table-bordered.table
-      %thead
-        %tr
-          %th User
-          %th First course
-          %th Second course
-          %th Drink
-          %th Total price
-          %th
-      %tbody
-        - @orders.each do |order|
+    .col-md-12
+      %h2 Todays orders:
+      %table.table-bordered.table
+        %thead
           %tr
-            %td= order.user.name 
-            %td= order.first_course_dish.name if order.first_course_dish
-            %td= order.second_course_dish.name if order.second_course_dish
-            %td= order.drink.name if order.drink
-            %td= order.total_price.round(2)
-            %td= link_to 'Go to order', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
-    %br
-    %h4
-      Total price for day:
-      $
-      =@orders.inject(0) {|s, o| s+o.total_price}.round(2)
-
-
-
+            %th User
+            %th First course
+            %th Second course
+            %th Drink
+            %th Total price
+            %th
+        %tbody
+          - @orders.each do |order|
+            %tr
+              %td= order.user.name 
+              %td= order.first_course_dish.name if order.first_course_dish
+              %td= order.second_course_dish.name if order.second_course_dish
+              %td= order.drink.name if order.drink
+              %td= order.total_price.round(2)
+              %td= link_to 'Go to order', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
+      %br
+      %h4
+        Total price for day:
+        $
+        =@orders.inject(0) {|s, o| s+o.total_price}.round(2)
 -else
   %h3 Menu for today isn't created yet!
   %div 
     = simple_form_for :menu, :url => url_for(:action => 'create', :controller => 'admin/menus'), :method => 'post' do |menu|
-      %h3
-        First course dishes:
-      %div
-        = menu.collection_check_boxes :first, @first, :id, :name do |b|
-          .checkbox= b.label { b.check_box + b.text }
-      %h3
-        Second course dishes:
-      %div
-        = menu.collection_check_boxes :second, @second, :id, :name do |b|
-          .checkbox= b.label { b.check_box + b.text }
-      %h3
-        Drinks:
-      %div
-        = menu.collection_check_boxes :drink, @drink, :id, :name do |b|
-          .checkbox= b.label { b.check_box + b.text }
-      %br
-      %br
-      = menu.submit "Create menu" 
+      .col-md-4
+        %h4
+          First course dishes:
+        = menu.collection_check_boxes :first, @first, :id, :view, item_wrapper_class: 'col-md-12' do |b|
+          .checkbox
+            = b.label do
+              =b.check_box
+              =link_to "#{b.text}",b.object
+      .col-md-4    
+        %h4
+          Second course dishes:
+        = menu.collection_check_boxes :second, @second, :id, :view, item_wrapper_class: 'col-md-12' do |b|
+          .checkbox
+            = b.label do
+              =b.check_box
+              =link_to "#{b.text}",b.object
+      .col-md-4
+        %h4
+          Drinks:
+        = menu.collection_check_boxes :drink, @drink, :id, :view, item_wrapper_class: 'col-md-12' do |b|
+          .checkbox
+            = b.label do
+              =b.check_box
+              =link_to "#{b.text}",b.object
+      .text-center.col-md-12
+        = menu.submit "Create menu", class:"btn btn-raised btn-warning"

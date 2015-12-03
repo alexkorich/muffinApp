@@ -9,11 +9,9 @@
     = csrf_meta_tags 
   %body
     =render "shared/header"
-    -flash.each do |name, msg|
-      = content_tag :div, msg, id: "flash-#{name}"
-    .container  
+    .container
+      =render "layouts/flash_messages"
       = yield
     %footer.footer.c{style:"background-color: grey"}
       .container
         lildd
-

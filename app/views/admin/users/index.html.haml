@@ -12,8 +12,10 @@
         %td= user.name
         %td= user.email
         %td= user.role
-        %td= link_to "orders", controller: "admin/orders", action: "find_by_user",  user_id: user.id
-
+        -if user.has_orders?
+          %td= link_to "orders", controller: "admin/orders", action: "find_by_user",  user_id: user.id
+        -else
+          %td
 
         / %td= link_to 'Show', admin_user_path, :
         / %td= link_to 'Edit', edit_admin_user_path(user)
