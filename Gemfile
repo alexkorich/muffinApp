@@ -32,7 +32,7 @@ gem 'coffee-script-source'
 gem "rails_admin"
 gem 'simple_form'
 gem "simple_calendar", "~> 2.0"
-
+gem 'figaro'
 gem 'carrierwave'
 gem 'kaminari'
 gem 'mini_magick'
