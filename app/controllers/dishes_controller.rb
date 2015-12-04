@@ -5,6 +5,10 @@ class DishesController < ApplicationController
   # GET /dishes.json
   def index
     @dishes = Dish.all
+    @first = Dish.where(type:"FirstCourseDish")
+    @second = Dish.where(type:"SecondCourseDish")
+    @drinks = Dish.where(type:"Drink")
+
   end
 
   # GET /dishes/1
