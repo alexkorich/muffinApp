@@ -1,4 +1,4 @@
-%h1 Listing first_course_dishes
+%h1 First course
 
 %table
   %thead
@@ -8,12 +8,5 @@
       %th
 
   %tbody
-    - @first_course_dishes.each do |first_course_dish|
-      %tr
-        %td= link_to 'Show', first_course_dish
-        %td= link_to 'Edit', edit_first_course_dish_path(first_course_dish)
-        %td= link_to 'Destroy', first_course_dish, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New First course dish', new_first_course_dish_path
+    - @dishes.each do |d|
+      =d.name

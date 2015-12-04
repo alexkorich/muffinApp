@@ -4,6 +4,10 @@ class DishesController < ApplicationController
   # GET /dishes
   # GET /dishes.json
   def index
+    if params[:type]
+      @dishes  = Dish.where(type: params[:type]) 
+      render "#{params['type'].pluralize.underscore}/index"
+    end  
     @dishes = Dish.all
     @first = Dish.where(type:"FirstCourseDish")
     @second = Dish.where(type:"SecondCourseDish")

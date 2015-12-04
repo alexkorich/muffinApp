@@ -1,4 +1,4 @@
-%h1 Listing drinks
+%h2 Listing drinks
 
 %table
   %thead
@@ -8,12 +8,5 @@
       %th
 
   %tbody
-    - @drinks.each do |drink|
-      %tr
-        %td= link_to 'Show', drink
-        %td= link_to 'Edit', edit_drink_path(drink)
-        %td= link_to 'Destroy', drink, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Drink', new_drink_path
+    - @dishes.each do |d|
+      =d.name
