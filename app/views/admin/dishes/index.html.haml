@@ -10,13 +10,18 @@
       %tr
         %td=link_to d.name, d
         %td= d.type
-        %td= d.price 
+        %td= d.price_s
 %br
-%div Create new dish:
-= simple_form_for :dish, html: {multipart: true}, :url => url_for(action: 'create', controller: 'admin/dishes'), :method => 'post' do |dish|
-  = dish.input :name, label: 'Dish name'
-  = dish.input :type, collection: ["FirstCourseDish", "SecondCourseDish", "Drink"]
-  = dish.input :quantity, as: :integer
-  = dish.input :price, as: :float
-  = dish.input :avatar, as: :file
-  = dish.submit "Create dish", class: "btn-warning btn"
+%div 
+%h3 New dish:
+.col-md-8.md-offset-2
+  = simple_form_for :dish, html: {multipart: true}, :url => url_for(action: 'create', controller: 'admin/dishes'), :method => 'post' do |dish|
+    = dish.input :name, label: 'Dish name'
+    = dish.input :type, collection: ["FirstCourseDish", "SecondCourseDish", "Drink"]
+    = dish.input :short_description, as: :string
+    = dish.input :description, as: :text
+    = dish.input :quantity_description, as: :string
+    = dish.input :quantity, as: :integer
+    = dish.input :price, as: :float
+    = dish.input :avatar, as: :file, class: "btn-warning btn center-block"
+    = dish.submit "Create dish", class: "btn-warning btn center-block"
