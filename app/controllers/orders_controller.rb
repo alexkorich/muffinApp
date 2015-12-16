@@ -23,16 +23,11 @@ class OrdersController < ApplicationController
   end
  
   def create
-    params[:order]=params["menu"]
-    if (params[:order])&&(params[:order][:first_course_dish_ids] || params[:order][:second_course_dish_ids] || params[:order][:drink_ids])
+    if (params[:order])&&(params[:order][:first_course_dish_id] || params[:order][:second_course_dish_id] || params[:order][:drink_id])
       @order = Order.new(order_params)
       @order.date=Date.today
       @order.start_time=DateTime.now
       @order.user_id=current_user.id
-      @order.first_course_dish=FirstCourseDish.find(params[:order][:first_course_dish_ids]) if params[:order][:first_course_dish_ids]
-      @order.second_course_dish=SecondCourseDish.find(params[:order][:second_course_dish_ids]) if params[:order][:second_course_dish_ids]
-      @order.drink=Drink.find(params[:order][:drink_ids]) if params[:order][:drink_ids]
-      
       respond_to do |format|
         if @order.save
           format.html { 
