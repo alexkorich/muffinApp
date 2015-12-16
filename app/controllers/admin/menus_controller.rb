@@ -11,14 +11,11 @@ class Admin::MenusController < ApplicationController
   # GET /menus/1.json
   def show
   end
-
-
-
-    def create
-      @menu = Menu.new
-      @menu.date=Date.today
-      @menu.start_time=DateTime.now
-      params[:menu][:first].each do |k|
+  def create
+    @menu = Menu.new
+    @menu.date=Date.today
+    @menu.start_time=DateTime.now
+    params[:menu][:first].each do |k|
         unless k.empty? then @menu.first_course_dishes<<FirstCourseDish.find(k) end
       end
 
@@ -33,7 +30,7 @@ class Admin::MenusController < ApplicationController
         format.html { redirect_to :back, notice: 'Menu was successfully created.' }
         format.json { render :show, status: :created, location: @menu }
       else
-        format.html { redirect_to :back, notice: 'Something went wrong!' }
+        format.html { redirect_to :back, notice: @menu.errors }
         format.json { render json: @menu.errors, status: :unprocessable_entity }
       end
     end
