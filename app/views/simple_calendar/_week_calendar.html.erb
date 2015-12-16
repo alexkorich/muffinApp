@@ -1,7 +1,18 @@
 <div class="simple-calendar">
-  <%= link_to "Previous", start_date: date_range.first - 1.day  %>
+  <div class="col-md-4">
+    
+  <%= link_to "Previous", start_date: date_range.first - 1.day %>
+
+  </div>
+  <div class="col-md-4">
+
   <%= start_date.strftime("%B")+" "+date_range.first.mday.to_s+" - "+date_range.last.strftime("%B")+" "+date_range.last.mday.to_s%>
+  </div>
+  
+  <div class="col-md-4">
+
   <%= link_to "Next", start_date: date_range.last + 1.day  %>
+  </div>
 
   <table class="table table-striped">
     <thead>

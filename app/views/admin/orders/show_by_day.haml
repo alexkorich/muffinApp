@@ -27,7 +27,7 @@
             %td= order.drink.name
           -else
             %td  
-          %td= order.total_price.round(2)
+          %td= order.total_price_s
           %td= link_to 'Show', controller: "admin/orders", action: :show, id:order.id, type: "one"
 - a=0
 - @orders.each do |order|

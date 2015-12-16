@@ -20,7 +20,7 @@
           %td= order.first_course_dish.name
           %td= order.second_course_dish.name
           %td= order.drink.name
-          %td= order.total_price.round(2)
+          %td= order.total_price_s
           %td= link_to 'Show', controller: "admin/orders", action: :show, date:"222", id:order.id, type: "one"
           
 

@@ -31,4 +31,7 @@ class Order < ActiveRecord::Base
     a+=self.second_course_dish.price if self.second_course_dish
     a.round(2)
   end
+    def total_price_s
+      "$ "+self.total_price.to_s
+    end
 end

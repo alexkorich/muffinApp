@@ -21,4 +21,7 @@ class Dish < ActiveRecord::Base
   def view
     self.name+" | "+"$"+self.price.to_s
   end
+  def price_s
+    "$ "+self.price.round(2).to_s
+  end
 end

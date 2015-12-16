@@ -1,28 +1,25 @@
-
+-if @menu
+  %h4.col-md-12.text-center
+    Today is
+    = @menu.start_time.to_date.to_s
+  %h3.col-md-12.text-center
+    Menu for today: 
+  = simple_form_for Order.new, name:"order", url: url_for(action: 'create', controller: 'orders'), method: 'post' do |f|
+    .col-md-4
+      = f.association :first_course_dish, collection: @menu.first_course_dishes, as: "first_course_dish", required: false, label_method: lambda { |d| link_to "#{d.name} | #{d.price_s}", d  }, as: :radio_buttons
+    .col-md-4
+      = f.association :second_course_dish,  collection: @menu.second_course_dishes, as: "second_course_dish",required: false,  label_method: lambda { |d| link_to "#{d.name} | #{d.price_s}", d  }, as: :radio_buttons
+    .col-md-4
+      = f.association :drink, collection: @menu.drinks, required: false, as: "drink", label_method: lambda { |d| link_to "#{d.name} | #{d.price_s}", d  }, as: :radio_buttons
+    -if user_signed_in?
+      .text-center.col-md-12
+        = f.submit "Process order", class:"btn btn-raised btn-warning"
+-else 
+  %h3
+    Yay! No menu for today yet!
+%h3.col-md-12.text-center
+  Menus for 2 weeks:
 = week_calendar  class:"table-striped", events: @menus, start_date: 1.weeks.ago, number_of_weeks: 2 do |date, menus|
   =date.mday
   -menus.each do |menu|
     = link_to "Show menu",  controller: "menus", action: "find_by_date",  date: date
--if @menu
-  %p
-    %b
-    Today is
-    = @menu.date 
-    = @menu.start_time
-  Menu for today: 
-  = simple_form_for Order.new, name:"order", url: url_for(action: 'create', controller: 'orders'), method: 'post' do |f|
-    .col-md-4
-      = f.association :first_course_dish, collection: @menu.first_course_dishes, as: "first_course_dish", required: false, label_method: lambda { |d| link_to "#{d.name} | $#{d.price}", d  }, as: :radio_buttons
-    .col-md-4
-      = f.association :second_course_dish,  collection: @menu.second_course_dishes, as: "second_course_dish",required: false,  label_method: lambda { |d| link_to "#{d.name} | $#{d.price}", d  }, as: :radio_buttons
-    .col-md-4
-      = f.association :drink, collection: @menu.drinks, required: false, as: "drink", label_method: lambda { |d| link_to "#{d.name} | $#{d.price}", d  }, as: :radio_buttons
-    -if user_signed_in?
-      .text-center.col-md-12
-        = f.submit "Process order", class:"btn btn-raised btn-warning"
-
-
--else 
-  %br
-  %br
-  Yay! No menu for today yet!

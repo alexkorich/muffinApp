@@ -1,3 +1,5 @@
+%h3.col-md-12.text-center
+  Orders calendar for 2 weeks:
 = week_calendar  class:"table-striped", events: @orders,start_date:1.weeks.ago, number_of_weeks: 2 do |date, orders|
   =date.mday
   -if !orders.empty?

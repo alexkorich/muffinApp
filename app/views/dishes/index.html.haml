@@ -6,8 +6,7 @@
   .col-md-4
     =image_tag  d.avatar.thumb if d.avatar
     =link_to d.name, d
-    $
-    =d.price
+    =d.price_s
     =d.quantity_description if d.quantity_description
     =d.short_description if d.short_description
 %h3.text-center.col-md-12
@@ -16,8 +15,7 @@
   .col-md-4
     =image_tag  d.avatar.thumb if d.avatar
     =link_to d.name, d
-    $
-    =d.price
+    =d.price_s
     =d.quantity_description if d.quantity_description
     =d.short_description if d.short_description
 %h3.text-center.col-md-12
@@ -26,7 +24,6 @@
   .col-md-4
     =image_tag  d.avatar.thumb if d.avatar
     =link_to d.name, d
-    $
-    =d.price
+    =d.price_s
     =d.quantity_description if d.quantity_description
     =d.short_description if d.short_description

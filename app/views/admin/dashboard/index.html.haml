@@ -1,33 +1,30 @@
 -if @menu
-  %div 
-    %h2 Menu for today:
+  .col-md-12
+    %h3 Menu for today:
     .col-md-4
-      %h3 First course:
+      %h4 First course:
       - @menu.first_course_dishes.each do |d|
         .col-md-8
           = link_to d.name, d
         .col-md-4 
-          $
-          = d.price
+          = d.price_s
     .col-md-4      
-      %h3 Second course:
+      %h4 Second course:
       - @menu.second_course_dishes.each do |d|
         .col-md-8
           = link_to d.name, d
         .col-md-4
-          $  
-          = d.price
+          = d.price_s
     .col-md-4      
-      %h3 Drinks:
+      %h4 Drinks:
       - @menu.drinks.each do |d|
         .col-md-8
           = link_to d.name, d
         .col-md-4
-          $
-          = d.price
+          = d.price_s
   -if @orders.exists?
     .col-md-12
-      %h2 Todays orders:
+      %h3 Todays orders:
       %table.table-bordered.table
         %thead
           %tr
@@ -44,7 +41,7 @@
               %td= order.first_course_dish.name if order.first_course_dish
               %td= order.second_course_dish.name if order.second_course_dish
               %td= order.drink.name if order.drink
-              %td= order.total_price.round(2)
+              %td= order.total_price_s
               %td= link_to 'Go to order', controller: "admin/orders", action: :show, id:order.id, date:222, type: "one"
       %br
       %h4

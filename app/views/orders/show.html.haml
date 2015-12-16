@@ -5,19 +5,19 @@
   %li Dish1:
   -if @order.first_course_dish
     = @order.first_course_dish.name 
-    = @order.first_course_dish.price
+    = @order.first_course_dish.price_s
   -else
     %span No dish ordered!  
   %li Dish2:
   -if @order.second_course_dish
     = @order.second_course_dish.name 
-    = @order.second_course_dish.price
+    = @order.second_course_dish.price_s
   -else
     %span No dish ordered!
   %li Drink:
   -if @order.drink
     = @order.drink.name 
-    = @order.drink.price
+    = @order.drink.price_s
   -else
     %span No drink ordered!
 %p
@@ -28,6 +28,6 @@
   = @order.user.id
 %p
   %b Total price:
-  = @order.total_price
+  = @order.total_price_s
 
 = link_to 'back', root_path

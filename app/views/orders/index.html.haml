@@ -18,7 +18,9 @@
           %td= order.first_course_dish.name if order.first_course_dish 
           %td= order.second_course_dish.name if order.second_course_dish
           %td= order.drink.name if order.drink
-          %td= order.total_price
+          %td
+            $
+            = order.total_price_s
           %td= link_to 'Show', order
   %br
 -else

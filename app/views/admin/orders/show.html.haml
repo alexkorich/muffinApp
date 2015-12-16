@@ -15,7 +15,7 @@
   %li Drink:
   -if @order.drink
     = @order.drink.name
-    = @order.drink.price
+    = @order.drink.price_s
 %p
   %b User:
   = @order.user.name
@@ -24,6 +24,6 @@
   = @order.user.id
 %p
   %b Total price:
-  = @order.total_price.round(2)
+  = @order.total_price_s
 
 = link_to 'back',:back
