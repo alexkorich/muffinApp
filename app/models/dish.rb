@@ -1,5 +1,5 @@
 class Dish < ActiveRecord::Base
-  
+  include ActionView::Helpers::NumberHelper
   has_and_belongs_to_many :menus, association_foreign_key: 'menu_id', join_table: 'dishes_menus'
 
 
@@ -22,6 +22,6 @@ class Dish < ActiveRecord::Base
     self.name+" | "+"$"+self.price.to_s
   end
   def price_s
-    "$ "+self.price.round(2).to_s
+    "$ "+number_with_precision(self.price, precision: 2).to_s
   end
 end

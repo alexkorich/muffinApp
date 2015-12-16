@@ -19,7 +19,8 @@
     Yay! No menu for today yet!
 %h3.col-md-12.text-center
   Menus for 2 weeks:
-= week_calendar  class:"table-striped", events: @menus, start_date: 1.weeks.ago, number_of_weeks: 2 do |date, menus|
-  =date.mday
-  -menus.each do |menu|
-    = link_to "Show menu",  controller: "menus", action: "find_by_date",  date: date
+.container
+  = week_calendar  class:"table-striped", events: @menus, start_date: 1.weeks.ago, number_of_weeks: 2 do |date, menus|
+    =date.mday
+    -menus.each do |menu|
+      = link_to "Show menu",  controller: "menus", action: "find_by_date",  date: date

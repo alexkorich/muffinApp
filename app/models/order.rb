@@ -1,5 +1,6 @@
 class Order < ActiveRecord::Base
   
+  include ActionView::Helpers::NumberHelper
   validates :user, :date, presence:true
   # validates :date, uniqueness:true
   validate :has_items?
@@ -32,6 +33,6 @@ class Order < ActiveRecord::Base
     a.round(2)
   end
     def total_price_s
-      "$ "+self.total_price.to_s
+      "$ "+number_with_precision(self.total_price, precision: 2).to_s
     end
 end
