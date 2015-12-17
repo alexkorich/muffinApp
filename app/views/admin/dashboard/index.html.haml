@@ -25,14 +25,14 @@
   -if @orders.exists?
     .col-md-12
       %h3 Todays orders:
-      %table.table-bordered.table
+      %table.table-bordered.table{"data-toggle"=>"table"}
         %thead
           %tr
-            %th User
+            %th{"data-sortable"=>'true'} User
             %th First course
             %th Second course
             %th Drink
-            %th Total price
+            %th{"data-sortable"=>'true'} Total price
             %th
         %tbody
           - @orders.each do |order|

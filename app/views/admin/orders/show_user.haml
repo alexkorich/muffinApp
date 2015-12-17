@@ -1,14 +1,14 @@
 %h3
   Orders for 
   = @orders[0].user.name
-%table.table.table-bordered
+%table.table.table-bordered{"data-toggle"=>"table"}
   %thead
     %tr
-      %th Date
-      %th First course
-      %th Second course
-      %th Drink
-      %th Total price
+      %th{"data-sortable"=>'true'} Date
+      %th{"data-sortable"=>'true'} First course
+      %th{"data-sortable"=>'true'} Second course
+      %th{"data-sortable"=>'true'} Drink
+      %th{"data-sortable"=>'true'} Total price
       %th 
     
 

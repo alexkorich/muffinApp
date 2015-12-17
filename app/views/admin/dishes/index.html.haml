@@ -1,10 +1,10 @@
 
-%table.table-bordered.table
+%table.table-bordered.table{"data-toggle"=>"table"}
   %thead
     %tr
-      %th Name
-      %th Type
-      %th Price
+      %th{"data-sortable"=>'true'} Name
+      %th{"data-sortable"=>'true'} Type
+      %th{"data-sortable"=>'true'} Price
   %tbody
     - @dishes.each do |d|
       %tr
