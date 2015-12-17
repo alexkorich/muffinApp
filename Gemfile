@@ -33,7 +33,7 @@ gem 'figaro'
 gem 'carrierwave'
 gem 'kaminari'
 gem 'mini_magick'
-
+gem "bootstrap-table-rails"
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-material-design', '~> 0.2.1'
 end
